@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+        <meta name="google-site-verification" content="ONW7FjhOnQbl0qdKKOUYXBxf-4ERt8FfB30p6dl0WUQ" />
+    
+        <meta content="http://salvius.org/images/main/succeed.jpg" property="og:image"/>
+    
+        <meta content="http://salvius.org/images/main/first_snow.jpg" property="og:image"/>
+    
+        <meta content="http://blog.salvius.org/2015/01/salvius-gives-thumbs-up-to-students-at.html" property="og:see_also"/>
+    
+        <meta content="http://blog.salvius.org/2014/11/grinspoon-entrepreneurship-conference.html" property="og:see_also"/>
+    
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <meta name="twitter:site" content="@salviusrobot">
+    
+        <meta name="twitter:creator" content="@salviusrobot">
+    
+        <meta name="twitter:title" content="A humanoid robot build using salvaged materials">
+    
+        <meta name="twitter:image:src" content="http://salvius.org/images/main/succeed.jpg">
+    
+        <meta property="og:type" content="product"/>
+    
+        <meta property="og:price:amount" content="{{ page.price }}"/>
+    
+        <meta property="og:price:currency" content="USD"/>
+    
+        <meta property="og:availability" content="preorder"/>
+    
+        <meta property="og:provider_name" content="Robot Store"/>
+    
+        <meta property="og:brand" content="Salvius"/>
+    
+        <meta name="msapplication-TileColor" content="#f15501"/>
+    
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+    
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+    
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+    
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+    
+
+    <meta content="Salvius the Robot" property="og:site_name"/>
+    <meta content="http://salvius.org" property="og:referenced"/>
+
+    <meta content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+    <meta name="twitter:description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials.">
+    <meta name="description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+
+    
+        <meta content="Finding Linear Velocity" property="og:title"/>
+        <title>Finding Linear Velocity</title>
+    
+
+    
+    <link rel="publisher" href="https://plus.google.com/+gunthercox"/>
+    
+
+	<link rel="stylesheet" href="/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+    
+
+    <link rel="canonical" href="http://salvius.org/notes/trigonometry/trigonometry/"/>
+    <link rel="shortlink" href="http://salvius.org/notes/trigonometry/trigonometry/"/>
+</head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="nav"  role="navigation">
+   <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Salvius the Robot</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="http://blog.salvius.org">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+        </a>
+    </li>
+    <li>
+        <a href="/blog/">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+            <sup style="color: #fbff6f">NEW</sup>
+        </a>
+    </li>
+    <li>
+        <a href="/donate/">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            Donate
+        </a>
+    </li>
+    <li>
+        <a href="/presentations/">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            Presentations
+        </a>
+    </li>
+    <li>
+        <a href="/tools/">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            Tools
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/gunthercox/Salvius" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            GitHub
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </div> 
+</div>
+
+<div class="margin-top">
+    <!-- Space under the fixed navbar -->
+</div>
+
+
+        <div class="container-fluid color-prestige">
+            <div class="row" style="padding: 20px 0px">
+                <div class="col-xs-4">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/programming/java-notes/">Previous</a>
+                    
+                </div>
+                <div class="col-xs-4 text-center">
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/">Main</a>
+                </div>
+                <div class="col-xs-4 text-right">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container color-white post">
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h1>Finding Linear Velocity</h1>
+                    <hr/>
+
+                    <p>Examples:</p>
+
+<p>Find the linear velocity of a point on the edge of a lawn mower blade 18 inches long evolving at 300 rpm. Find in inches per minute.</p>
+
+<p>v = 300 rev / 1 min * 2Pi / 1 rev * 18 in / 1 * 1 min / 60 sec = 10800 / 60 = 180Pi inches per second</p>
+
+<p>A point is 25 inches from the center of a circle. If the circle is rotating at 15 rev per sec, find the velocity of the point in feet per minute.</p>
+
+<p>v = wr = 1800 Pi rad / 1 min * 24 in / 1 * 1 ft / 12 in = 3600 Pi ft / min</p>
+
+<p>A point on the rim of a tir is 14 inches from the hub of the wheel. If the wheel is rotating at 120 rpm, find the linear velocity of the point in inches per second.</p>
+
+<p>v = 120 rev / 1 min * 2 Pi / 1 rev * 1 min / 60 sec * 14 in  / 1= 56 Pi in /sec</p>
+
+<p>A point on the edge of a gear 8 inches in diameter is revolving at 180 rpm. Find the linear velocity of this point in inches per second</p>
+
+<p>v = 130 rev / min * 3 pi / 1 rev * 1 min / 60 sec * 4 in / 1 = 24 Pi in / sec</p>
+
+<p>A person on the end of a skating whip is 10 feet from the center person. If they want to make 20 revolutions per minute, how fast will the last person in the line have to skate?</p>
+
+<p>v = 20 ev / sec * 2 Pi / 1 rev * 10 ft / 1 = 400 ft/ min</p>
+
+<p>Find the angular velocity in radians per minute and the linear velocity in feet per minute of the point on the rim of a wheel with 32 inch diameter rotating at 5 rev/sec.</p>
+
+<p>w = 5 rev / 1 sec * 2 Pi / 1 rev * 60 sec / 1 min = 100 Pi rad/min</p>
+
+<p>v = 600Pi / 1 min * 16 in * 1 ft/ 12 in = 800 Pi ft / min</p>
+
+<p>Note: In the above equation, Pi is the symbol pi and the operations of division indicate fractions.</p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+	<div class="container-fluid color-rust">
+		<div class="row" style="padding: 15px 0px">
+	        <div class="col-xs-6">
+                <i>Copyright &copy; 2021 Gunther Cox</i>
+            </div>
+	        <div class="col-xs-6 text-right">
+                
+                    <a href="https://twitter.com/salviusrobot" aria-label="Twitter" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.facebook.com/salviusrobot" aria-label="Facebook" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.youtube.com/user/salviusrobot/videos" aria-label="YouTube" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12573345-9', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3019790405701706",
+            enable_page_level_ads: true
+          });
+        </script>
+    </body>
+</html>

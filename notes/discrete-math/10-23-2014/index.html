@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+        <meta name="google-site-verification" content="ONW7FjhOnQbl0qdKKOUYXBxf-4ERt8FfB30p6dl0WUQ" />
+    
+        <meta content="http://salvius.org/images/main/succeed.jpg" property="og:image"/>
+    
+        <meta content="http://salvius.org/images/main/first_snow.jpg" property="og:image"/>
+    
+        <meta content="http://blog.salvius.org/2015/01/salvius-gives-thumbs-up-to-students-at.html" property="og:see_also"/>
+    
+        <meta content="http://blog.salvius.org/2014/11/grinspoon-entrepreneurship-conference.html" property="og:see_also"/>
+    
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <meta name="twitter:site" content="@salviusrobot">
+    
+        <meta name="twitter:creator" content="@salviusrobot">
+    
+        <meta name="twitter:title" content="A humanoid robot build using salvaged materials">
+    
+        <meta name="twitter:image:src" content="http://salvius.org/images/main/succeed.jpg">
+    
+        <meta property="og:type" content="product"/>
+    
+        <meta property="og:price:amount" content="{{ page.price }}"/>
+    
+        <meta property="og:price:currency" content="USD"/>
+    
+        <meta property="og:availability" content="preorder"/>
+    
+        <meta property="og:provider_name" content="Robot Store"/>
+    
+        <meta property="og:brand" content="Salvius"/>
+    
+        <meta name="msapplication-TileColor" content="#f15501"/>
+    
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+    
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+    
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+    
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+    
+
+    <meta content="Salvius the Robot" property="og:site_name"/>
+    <meta content="http://salvius.org" property="og:referenced"/>
+
+    <meta content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+    <meta name="twitter:description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials.">
+    <meta name="description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+
+    
+        <meta content="Divisibility" property="og:title"/>
+        <title>Divisibility</title>
+    
+
+    
+    <link rel="publisher" href="https://plus.google.com/+gunthercox"/>
+    
+
+	<link rel="stylesheet" href="/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+    
+
+    <link rel="canonical" href="http://salvius.org/notes/discrete-math/10-23-2014/"/>
+    <link rel="shortlink" href="http://salvius.org/notes/discrete-math/10-23-2014/"/>
+</head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="nav"  role="navigation">
+   <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Salvius the Robot</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="http://blog.salvius.org">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+        </a>
+    </li>
+    <li>
+        <a href="/blog/">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+            <sup style="color: #fbff6f">NEW</sup>
+        </a>
+    </li>
+    <li>
+        <a href="/donate/">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            Donate
+        </a>
+    </li>
+    <li>
+        <a href="/presentations/">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            Presentations
+        </a>
+    </li>
+    <li>
+        <a href="/tools/">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            Tools
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/gunthercox/Salvius" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            GitHub
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </div> 
+</div>
+
+<div class="margin-top">
+    <!-- Space under the fixed navbar -->
+</div>
+
+
+        <div class="container-fluid color-prestige">
+            <div class="row" style="padding: 20px 0px">
+                <div class="col-xs-4">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/discrete-math/10-16-2014/">Previous</a>
+                    
+                </div>
+                <div class="col-xs-4 text-center">
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/">Main</a>
+                </div>
+                <div class="col-xs-4 text-right">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/discrete-math/11-04-2014/">Next</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container color-white post">
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h1>Divisibility</h1>
+                    <hr/>
+
+                    <p>Def For integers a and b with b ≠ 0,
+we say that b divides a, written b|a
+if and only if a = b * c for some integer c.</p>
+
+<blockquote>
+  <p>2|10 because 10 = 2 * 5 and 5 ∈ ℤ.<br />
+4∤22 because 22 != 4 * c for any integer c there is no integer c such that 22 = 4c.</p>
+</blockquote>
+
+<h2 id="properties-of-divisibility">Properties of Divisibility</h2>
+<ul>
+  <li><strong>Transative</strong> For integers a, b, c, if a|b and b|c, then a|c.
+    <blockquote>
+      <p><strong>Proof:</strong> Let a, b, c, be integers.<br />
+Assume a|b and b|c.<br />
+So b = a * c for some integer x and<br />
+c = b * y for some integer y.<br />
+Thus c = a * x * y = a(xy). Since x and y are integers<br />
+we know xy is an integer.<br />
+Thus a|c.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="divisibility-test">Divisibility Test</h2>
+<blockquote>
+  <p>6|n   &lt;=&gt;   2|n and 3|n<br />
+ab|c  &lt;=    a|c and b|c<br />
+<em>Notice:</em> The use of the <em>Walker Property</em> in this example.
+<strong>Result:</strong> For integers a, b, c, if<br />
+a|c and b|c, then ab|c.<br />
+<strong>Proof:</strong> Let a, b, c be integers.<br />
+Assume a|b anf b|c.<br />
+Then c = ax and c = by for some integers x and y.<br />
+<em>At this point we see that there was a problem in prooving this.</em><br />
+<strong>Counterexample:</strong> a = 2   b = 4   c = 12<br />
+2|12   and   4|14<br />
+2 * 4 = 8   and   8∤12.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Result:</strong> (Anti-Walker Property)<br />
+For integers a, b, c, if ab|c, then a|c and b|c.<br />
+<strong>Proof:</strong> Let a, b, c, be integers.<br />
+Assume ab|c. Then c = ab*x for some integer x.<br />
+Thus c = a(bx) and we know bx ∈ ℤ. So a|c.<br />
+Also c = b * (ax) and we know ax ∈ ℤ.<br />
+Thus b|c.</p>
+</blockquote>
+
+<ul>
+  <li><strong>True or False (proove or disproove)</strong>
+    <ol>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>b and a</td>
+              <td>c, then a</td>
+              <td>bc.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>bc, then a</td>
+              <td>b and a</td>
+              <td>c.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>bc, then a</td>
+              <td>b or a</td>
+              <td>c.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>b and b</td>
+              <td>d, then ac</td>
+              <td>bd.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>b and c</td>
+              <td>d, then a+c</td>
+              <td>b+d.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+	<div class="container-fluid color-rust">
+		<div class="row" style="padding: 15px 0px">
+	        <div class="col-xs-6">
+                <i>Copyright &copy; 2021 Gunther Cox</i>
+            </div>
+	        <div class="col-xs-6 text-right">
+                
+                    <a href="https://twitter.com/salviusrobot" aria-label="Twitter" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.facebook.com/salviusrobot" aria-label="Facebook" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.youtube.com/user/salviusrobot/videos" aria-label="YouTube" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12573345-9', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3019790405701706",
+            enable_page_level_ads: true
+          });
+        </script>
+    </body>
+</html>

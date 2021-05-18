@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+        <meta name="google-site-verification" content="ONW7FjhOnQbl0qdKKOUYXBxf-4ERt8FfB30p6dl0WUQ" />
+    
+        <meta content="http://salvius.org/images/main/succeed.jpg" property="og:image"/>
+    
+        <meta content="http://salvius.org/images/main/first_snow.jpg" property="og:image"/>
+    
+        <meta content="http://blog.salvius.org/2015/01/salvius-gives-thumbs-up-to-students-at.html" property="og:see_also"/>
+    
+        <meta content="http://blog.salvius.org/2014/11/grinspoon-entrepreneurship-conference.html" property="og:see_also"/>
+    
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <meta name="twitter:site" content="@salviusrobot">
+    
+        <meta name="twitter:creator" content="@salviusrobot">
+    
+        <meta name="twitter:title" content="A humanoid robot build using salvaged materials">
+    
+        <meta name="twitter:image:src" content="http://salvius.org/images/main/succeed.jpg">
+    
+        <meta property="og:type" content="product"/>
+    
+        <meta property="og:price:amount" content="{{ page.price }}"/>
+    
+        <meta property="og:price:currency" content="USD"/>
+    
+        <meta property="og:availability" content="preorder"/>
+    
+        <meta property="og:provider_name" content="Robot Store"/>
+    
+        <meta property="og:brand" content="Salvius"/>
+    
+        <meta name="msapplication-TileColor" content="#f15501"/>
+    
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+    
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+    
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+    
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+    
+
+    <meta content="Salvius the Robot" property="og:site_name"/>
+    <meta content="http://salvius.org" property="og:referenced"/>
+
+    <meta content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+    <meta name="twitter:description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials.">
+    <meta name="description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+
+    
+        <meta content="Salvius the Robot" property="og:title"/>
+        <title>Salvius the Robot</title>
+    
+
+    
+    <link rel="publisher" href="https://plus.google.com/+gunthercox"/>
+    
+
+	<link rel="stylesheet" href="/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+    
+
+    <link rel="canonical" href="http://salvius.org/"/>
+    <link rel="shortlink" href="http://salvius.org/"/>
+</head>
+
+    <body>
+        <header itemscope itemtype="http://schema.org/ImageObject" role="banner" class="hidden-xs">
+    <h2 class="sr-only" itemprop="name">Salvius the Robot</h2>
+    <ul id="scene" class="no-space">
+        <li class="layer" data-depth="0.00"><img src="/images/massmutual-background.png" alt="Salvius background"></li>
+        <li class="layer" data-depth="0.10"><img src="/images/massmutual-table.png" alt="Salvius table"></li>
+        <li class="layer" data-depth="0.40"><img src="/images/massmutual-salvius.png" alt="Salvius massmutual" itemprop="contentUrl"></li>
+    </ul>
+    <span class="hide" itemprop="author">Gunther Cox</span>
+    <span class="hide" itemprop="contentLocation">Springfield MA, United States</span>
+    <meta itemprop="datePublished" content="2014-11-08">
+    <span class="hide" itemprop="description">Salvius traveled to the MassMutual Center today as a part of the Grinspoon Entrepreneurship Initiative.</span>
+</header>
+
+        <div class="navbar navbar-inverse" id="nav"  role="navigation">
+   <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand visible-xs" href="/">Salvius</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+
+            <ul class="nav navbar-nav">
+    <li>
+        <a href="#meet-salvius">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Meet Salvius
+        </a>
+    </li>
+    <li>
+        <a href="#software">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            Software
+        </a>
+    </li>
+    <li>
+        <a href="#engineering">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            Engineering
+        </a>
+    </li>
+    <li>
+        <a href="#story">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+            Story
+        </a>
+    </li>
+    <li>
+        <a href="#sponsors">
+            <i class="fa fa-ship" aria-hidden="true"></i>
+            Sponsors
+        </a>
+    </li>
+</ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="http://blog.salvius.org">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+        </a>
+    </li>
+    <li>
+        <a href="/blog/">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+            <sup style="color: #fbff6f">NEW</sup>
+        </a>
+    </li>
+    <li>
+        <a href="/donate/">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            Donate
+        </a>
+    </li>
+    <li>
+        <a href="/presentations/">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            Presentations
+        </a>
+    </li>
+    <li>
+        <a href="/tools/">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            Tools
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/gunthercox/Salvius" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            GitHub
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </div> 
+</div>
+
+
+	    <div class="container-fluid">
+            <div class="row color-soil inset-shadow js-first-row">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="page-header">
+            <h1 id="meet-salvius">
+                Meet Salvius!
+                <small class="text-success">A humanoid robot built from recycled materials.</small>
+                <i class="fa fa-leaf text-success pull-right" aria-hidden="true"></i>
+            </h1>
+        </div>
+        <p class="lead">
+            <img src="/images/vectors/head.svg" class="pull-left" height="200" alt="Salvius">
+            Salvius is a robotic prototype designed for learning. The robot's design is centered around a comprehensive API which makes it possible to get up and running in mere minutes. Developers can easily experiment with machine learning and kinematics for humanoid robots. A wide selection of plug and play hardware additions can be installed as well. Salvius has been built using a variety of recycled materials, making it simple and inexpensive to start developing.
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+  <div class="parallax-window" data-parallax="scroll" data-bleed="100" data-naturalWidth="3200" data-naturalHeight="2067">
+    <div class="parallax-slider">
+        <picture>
+            <source media="(max-width: 800px)" srcset="/images/main/succeed-800px.jpg">
+            <source media="(max-width: 1024px)" srcset="/images/main/succeed-1024px.jpg">
+            <source media="(max-width: 1200px)" srcset="/images/main/succeed-1200px.jpg">
+            <source media="(max-width: 2400px)" srcset="/images/main/succeed-2400px.jpg">
+            <source media="(max-width: 3200px)" srcset="/images/main/succeed.jpg">
+            <img src="/images/main/succeed.jpg" alt="Salvius the robot">
+        </picture>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-1">
+        <div class="panel panel-default white-outline color-darkorange">
+            <div class="panel-body text-center">
+                <i class="fa fa-large fa-cog" aria-hidden="true"></i>
+                <h2>
+                    Get started with BotKit
+                </h2>
+                <p class="lead">
+                    Get started with the <strong>all new</strong> BotKit.<br/>
+                    The kit contains everything you need to start
+                    building humanoid robots.
+                </p>
+                <a href="/store/" class="btn btn-default btn-lg white-outline color-darkorange">Preorder</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="software" class="row color-forest inset-shadow">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="page-header">
+            <h1>
+                Open Source Software
+                <i class="fa fa-lightbulb-o yellow-glow animate pull-right" aria-hidden="true"></i>
+            </h1>
+        </div>
+
+        <p class="lead">
+            A minimal amount of code has been written specifically for Salvius.
+            Instead, this project aims to create and promote the development of
+            more robust software libraries that have extensive use cases
+            throughout the software community.
+        </p>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card hovercard color-white">
+                    <div class="cardheader color-navy">
+
+                    </div>
+                    <div class="avatar">
+                        <img src="/images/vectors/head.svg" alt="Salvius" class="color-white">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            Salvius
+                        </div>
+                        <p class="lead">
+                            Salvius is a humanoid robot made from recycled parts.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a class="btn btn-info btn-lg" href="https://twitter.com/salviusrobot" aria-label="Salvius on Twitter" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-primary btn-lg" href="https://www.facebook.com/salviusrobot" aria-label="Salvius on Facebook" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-default btn-lg" href="https://github.com/gunthercox/salvius" aria-label="Salvius source code on GitHub" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card hovercard color-white">
+                    <div class="cardheader color-prestige">
+
+                    </div>
+                    <div class="avatar">
+                        <img src="/images/logos/chatterbot.png" alt="ChatterBot">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            ChatterBot
+                        </div>
+                        <p class="lead">
+                            ChatterBot is a machine learning, conversational dialog engine.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a class="btn btn-default btn-lg" href="https://github.com/gunthercox/ChatterBot" aria-label="ChatterBot source code on GitHub" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+
+                <div class="card hovercard color-white">
+                    <div class="cardheader color-rust">
+
+                    </div>
+                    <div class="avatar">
+                        <img src="/images/logos/zorg.svg" alt="Zorg" class="color-white">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            Zorg
+                        </div>
+                        <p class="lead">Zorg is a framework for robotics and physical computing.</p>
+                    </div>
+                    <div class="bottom">
+                        <a class="btn btn-default btn-lg" href="https://github.com/zorg/" aria-label="Zorg source code on GitHub" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-warning btn-lg" href="http://zorg.github.io/" aria-label="Zorg website" target="_blank">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="engineering" class="row row-banner color-prestige">
+    <div class="col-sm-10 col-sm-offset-1">
+    <div class="page-header">
+        <h1>
+            Open Specification
+            <i class="fa fa-cog pull-right" aria-hidden="true"></i>
+        </h1>
+    </div>
+
+    <p class="lead">
+        The design of a humanoid robot is the result of a great amount of interdisciplinary science.
+        Salvius has been built in compliance with a versioned engineering specification to ensure that each new component must meet a minimum standard of functionality before being added to the robot.
+        Adhering to a specification makes it possible to set development goals and measure the project's progress.
+        Versioning also makes it possible for development to continue even if the entire robot cannot be immediately upgraded to match the latest version of the specification.
+    </p>
+
+    <p class="lead">
+    Salvius was originally developed without specification. With many components being continuously developed and improved, it became necessary to develop a specification to follow to ensure that new parts could successfully replace old ones.
+    </p>
+</div>
+
+    <div id="specificationCarousel">
+    <div class="col-xs-3 color-darkgray">
+        <a href="/spec/hands/">
+            <div class="item">
+                <div class="image">
+                    <img src="/images/topics/hands.jpg" class="zoom" alt="Robot hands"/>
+                </div>
+                <div class="caption">
+                    <h3 class="text-center">Hands</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-3 color-rust">
+        <a href="/spec/neck/">
+            <div class="item">
+                <div class="image">
+                    <img src="/images/topics/neck.jpg" class="zoom" alt="Robot neck joint"/>
+                </div>
+                <div class="caption">
+                    <h3 class="text-center">Neck</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-3 color-navy">
+        <div class="item">
+            <div class="image">
+                <img src="/images/topics/hardware.jpg" class="zoom" alt="Robot hardware"/>
+            </div>
+            <div class="caption">
+                <h3 class="text-center">Hardware</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 color-forest">
+        <a href="/spec/head/">
+            <div class="item">
+                <div class="image">
+                    <img src="/images/topics/head.jpg" class="zoom" alt="Salvius robot head"/>
+                </div>
+                <div class="caption">
+                    <h3 class="text-center">Head</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div>
+        <div class="col-xs-3 color-forest">
+            <a href="/spec/arms/">
+                <div class="item">
+                    <div class="image">
+                        <img src="/images/topics/arms.png" class="zoom" alt="Robot arms"/>
+                    </div>
+                    <div class="caption">
+                        <h3 class="text-center">Arms</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3 color-soil">
+            <a href="/spec/torso/">
+                <div class="item">
+                    <div class="image">
+                        <img src="/images/topics/torso.jpg" class="zoom" alt="Robot torso"/>
+                    </div>
+                    <div class="caption">
+                        <h3 class="text-center">Torso</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3 color-prestige">
+            <a href="/spec/legs/">
+                <div class="item">
+                    <div class="image">
+                        <img src="/images/topics/legs.jpg" class="zoom" alt="Biped robot legs"/>
+                    </div>
+                    <div class="caption">
+                        <h3 class="text-center">Legs</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3 color-darkgray">
+            <a href="/spec/">
+                <div class="item">
+                    <div class="image">
+                        <img src="/images/topics/chicken.jpg" class="zoom" alt="Robot with chicken"/>
+                    </div>
+                    <div class="caption">
+                        <h3 class="text-center">More...</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<div class="row parallax-window" data-parallax="scroll" data-bleed="10">
+    <div class="parallax-slider">
+        <picture>
+            <source media="(max-width: 800px)" srcset="/images/main/first_snow-800px.jpg">
+            <source media="(max-width: 1024px)" srcset="/images/main/first_snow-1024px.jpg">
+            <source media="(max-width: 1200px)" srcset="/images/main/first_snow-1200px.jpg">
+            <source media="(max-width: 2400px)" srcset="/images/main/first_snow-2400px.jpg">
+            <source media="(max-width: 3200px)" srcset="/images/main/first_snow-3200px.jpg">
+            <source media="(max-width: 4000px)" srcset="/images/main/first_snow.jpg">
+            <img src="/images/main/first_snow.jpg" alt="Salvius the robot">
+        </picture>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-1">
+        <div class="panel panel-default color-navy white-outline" id="snowImage">
+            <div class="panel-body">
+                <h2 class="text-center">
+                    <i class="fa fa-large fa-map-marker" aria-hidden="true"></i>
+                    Salvius Travels
+                </h2>
+                <p class="lead">
+                    Salvius travels to a variety of locations. The goal of this
+                    initiative is to improve the project's development while
+                    simultaneously creating opportunities for people to work with
+                    new and cutting edge technologies.
+                    The robot has been the center of workshops and presentations,
+                    the robot also serves as a great platform for developing at
+                    hackathons and maker fairs.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="story" class="row color-darkgray inset-shadow">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="page-header">
+            <h1>
+                Story
+                <i class="fa fa-rocket pull-right" aria-hidden="true"></i>
+            </h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="/images/news02.jpg" class="img-responsive hidden-xs" alt="Salvius news article"/>
+            </div>
+            <div class="col-sm-8">
+                <p class="lead">
+                    I have always had a deep interest in learning about technology. In truth, I have never owned an electronic device for long without disassembling it to see how it works. I find the field of robotics compelling because it combines every field of science with a single subject. Studying robotics teaches people about anatomy, biology, chemistry, mathematics, physics, engineering, etc. and this list just keeps going on. In high school, I began an open source robotics project with the goal of teaching others about robotics while simultaneously furthering my own knowledge.
+                </p>
+                <p class="lead">
+                    In 2013 I started a campaign to raise funding and get supplies to further develop Salvius. Since then, I have had some incredible opportunities meet and collaborate with countless brilliant individuals.
+                </p>
+
+                <div class="panel panel-success color-orange white-outline">
+                    <div class="panel-body">
+                        <em class="lead">
+                            I have never owned an electronic device for long without disassembling it to see how it works. @salviusrobot
+                        </em>
+                        <br/>
+                        <a href="https://twitter.com/share?text=I+have+never+owned+an+electronic+device+for+long+without disassembling+it+to+see+how+it+works.+%40salviusrobot&url=http://salvius.org" class="btn btn-xs color-orange white-outline pull-right" target="_blank">Retweet</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row parallax-window" data-parallax="scroll" data-bleed="10" data-naturalWidth="4000" data-naturalHeight="2248">
+    <div class="parallax-slider">
+        <picture>
+            <source media="(max-width: 800px)" srcset="/images/main/nature-800px.jpg">
+            <source media="(max-width: 1024px)" srcset="/images/main/nature-1024px.jpg">
+            <source media="(max-width: 1200px)" srcset="/images/main/nature-1200px.jpg">
+            <source media="(max-width: 2400px)" srcset="/images/main/nature-2400px.jpg">
+            <source media="(max-width: 3200px)" srcset="/images/main/nature-3200px.jpg">
+            <source media="(max-width: 4000px)" srcset="/images/main/nature.jpg">
+            <img src="/images/main/nature.jpg" alt="Salvius the robot">
+        </picture>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-1">
+        <div class="panel panel-default color-softgreen white-outline">
+            <div class="panel-body">
+
+                <h1>Subscribe</h1>
+                <h5>Subscribe to our periodic project updates and newsletter.</h5>
+
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="//salvius.us15.list-manage.com/subscribe/post?u=580aa1ae653acac0a2d60dc17&amp;id=a0bdfbd112" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <div class="mc-field-group">
+                                <div class="input-group">
+                                    <label for="mce-EMAIL" class="hide">Email Address <span class="asterisk text-danger">*</span></label>
+                                    <input type="email" value="" name="EMAIL" class="form-control input-lg email required" id="mce-EMAIL" aria-label="Email address" pattern=".*@.*" placeholder="Email address">
+                                    <span class="input-group-btn">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-default">
+                                    </span>
+                                </div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_580aa1ae653acac0a2d60dc17_a0bdfbd112" tabindex="-1" value="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+                <br/>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sponsors" class="row color-navy inset-shadow">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="page-header">
+            <h1>
+                Sponsors
+                <i class="fa fa-ship pull-right" aria-hidden="true"></i>
+            </h1>
+        </div>
+
+        <div class="jumbotron">
+            <a href="https://www.facebook.com/pages/Wilbraham-Music/148382598513113" title="Wilbraham Music">
+                <img src="/images/logos/wilbraham_music.jpg" alt="Wilbraham Music" width="200"/>
+            </a>
+            <p class="lead text-right">
+                Contact <a href="mailto:gunthercx@gmail.com">gunthercx@gmail.com</a>
+                to become a sponsor.
+            </p>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+        <footer>
+	<div class="container-fluid color-rust">
+		<div class="row" style="padding: 15px 0px">
+	        <div class="col-xs-6">
+                <i>Copyright &copy; 2021 Gunther Cox</i>
+            </div>
+	        <div class="col-xs-6 text-right">
+                
+                    <a href="https://twitter.com/salviusrobot" aria-label="Twitter" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.facebook.com/salviusrobot" aria-label="Facebook" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.youtube.com/user/salviusrobot/videos" aria-label="YouTube" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+
+    <script src="/js/jquery.parallax.js"></script>
+
+    <script src="/js/parallax.js"></script>
+
+    <script src="/js/mainpage.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12573345-9', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+    </body>
+</html>

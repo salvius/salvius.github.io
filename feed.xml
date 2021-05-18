@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.1">Jekyll</generator><link href="http://salvius.org/feed.xml" rel="self" type="application/atom+xml" /><link href="http://salvius.org/" rel="alternate" type="text/html" /><updated>2021-05-18T18:56:39+00:00</updated><id>http://salvius.org/feed.xml</id><title type="html">Salvius the Robot</title><subtitle>Salvius is a robotic prototype designed for learning. The robot's design is centered around a comprehensive API which makes it possible to get up and running in mere minutes. Developers can easily experiment with machine learning and kinematics for humanoid robots. A wide selection of plug and play hardware additions can be installed as well. Salvius has been built using a variety of recycled materials, making it simple and inexpensive to start developing.
+</subtitle><entry><title type="html">Get local IP in Python</title><link href="http://salvius.org/blog/2017/01/get-local-ip/" rel="alternate" type="text/html" title="Get local IP in Python" /><published>2017-01-01T00:00:00+00:00</published><updated>2017-01-01T00:00:00+00:00</updated><id>http://salvius.org/blog/2017/01/get-local-ip</id><content type="html" xml:base="http://salvius.org/blog/2017/01/get-local-ip/">This is a cool code snippet I have used on several occacions for Python
+projects that need to figure out what the IP of the device they are running
+on is.
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;fcntl&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;struct&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_ip_address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ifname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AF_INET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SOCK_DGRAM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inet_ntoa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fcntl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ioctl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+        &lt;span class=&quot;mh&quot;&gt;0x8915&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# SIOCGIFADDR
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;struct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'256s'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ifname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;ip_address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_ip_address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'wlan0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ip_address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">This is a cool code snippet I have used on several occacions for Python projects that need to figure out what the IP of the device they are running on is.</summary></entry><entry><title type="html">Gathering Parts For Your Project</title><link href="http://salvius.org/blog/2015/12/gathering-parts/" rel="alternate" type="text/html" title="Gathering Parts For Your Project" /><published>2015-12-12T00:00:00+00:00</published><updated>2015-12-12T00:00:00+00:00</updated><id>http://salvius.org/blog/2015/12/gathering-parts</id><content type="html" xml:base="http://salvius.org/blog/2015/12/gathering-parts/">&lt;p&gt;Recycling used electronic gadgets is a fantastic way to build a parts inventory for your projects. It is extremely useful to always have a few parts on hand for when you need them. However, when salvaging parts, some devices prove more bountiful than others.&lt;/p&gt;
+
+&lt;h2 id=&quot;vcrs-cassette-players-walkmans-cd-players&quot;&gt;VCRs, Cassette players, Walkmans, CD players&lt;/h2&gt;
+
+&lt;p&gt;Devices like these are a goldmine of parts. In all of these items you will be able to recover small gears, motors, sensors and switches, not to mention a plethora of circuit boards with components that can easily be unsoldered for use in other projects.&lt;/p&gt;
+
+&lt;h2 id=&quot;pagers-cell-phones&quot;&gt;Pagers, Cell phones&lt;/h2&gt;
+
+&lt;p&gt;These devices usually have a few useful parts that can be extracted. The parts used in the circuit boards for cell phones are typically too small to unsolder from the circuit board. The only useful parts that can be recovered are speakers, microphones and vibrator motors. Cell phones may also contain a tiny CMOS camera which is usually too small to be able to easily integrate into other projects.&lt;/p&gt;
+
+&lt;h2 id=&quot;televisions-computer-monitors-air-conditioners-calculators-television-remotes&quot;&gt;Televisions, Computer monitors, Air conditioners, Calculators, Television remotes&lt;/h2&gt;
+
+&lt;p&gt;Items like these typically have nothing of value in them for our robotics projects. You will probably only find one useful item.&lt;/p&gt;
+
+&lt;p&gt;In addition to the items listed above there are some rare items which you do not want to pass up if you have the opportunity to get. These items include electronic children’s toys, treadmills, and power wheelchairs. Any children’s toy with electronic parts is going to have a bountiful selection of high quality parts. In addition, treadmills have a selection of motors in them. As for power wheelchairs, if you can get one of these you pretty much have a mobile robot base already. All that needs to be done is to set up a remote connected to the control panel on the chair and you’re good to go.&lt;/p&gt;
+
+&lt;h2 id=&quot;know-when-to-stop&quot;&gt;Know When To Stop&lt;/h2&gt;
+
+&lt;p&gt;Gear boxes are gold for robotics projects and if you strip one down to just a motor and a pile of gears then you have lost a valuable part. Gear boxes make it very easy to move parts on your robot and you will find that many times just a motor on its own will not suffice. Circuit boards are another valuable resource. There will be times when you can tap into a circuit board and use it, as well as other times when you may just need one capacitor from the board. Some parts are more useful as a whole.&lt;/p&gt;
+
+&lt;h2 id=&quot;dangerous-items&quot;&gt;Dangerous Items&lt;/h2&gt;
+
+&lt;p&gt;Some electronic devices contain components or materials which can be potentially hazardous. All electronic devices contain the toxic element Lead. Lead is used for the solder which attaches electronic parts to the circuit board.&lt;/p&gt;
+
+&lt;p&gt;Be careful not to damage batteries, batteries contain acid and other toxic chemicals. Some batteries contain Cadmium, an extremely toxic metal.&lt;/p&gt;
+
+&lt;p&gt;Most smoke detectors contain a artificially produced radioisotope, americium-241. You’re not at risk for radiation poisoning from standing near a smoke detector but don’t take these items apart.&lt;/p&gt;
+
+&lt;p&gt;Infrared lasers are used in cd and dvd players, be careful if testing a part from one of these devices. Shining any laser into your eye will damage it, but the human eye can’t see infrared light so you can damage your eyes without you even being aware of it.&lt;/p&gt;
+
+&lt;p&gt;Capacitors in old monitors and televisions can store a charge of several hundred volts without even being plugged into an electrical socket.&lt;/p&gt;
+
+&lt;p&gt;Most devices are completely safe to take apart. It is better to be safe than sorry so do research on the devices you are taking apart. You will soon learn to quickly identify what gadgets contin useful parts and what ones you don’t need to waste your time with. Stay safe and learn what these used devices have to offer.&lt;/p&gt;
+
+&lt;h2 id=&quot;raw-materials&quot;&gt;Raw Materials&lt;/h2&gt;
+
+&lt;p&gt;Large sheets or blocks of various types of metal and polymers. These items can be machined or milled into nearly anything.&lt;/p&gt;</content><author><name></name></author><summary type="html">Recycling used electronic gadgets is a fantastic way to build a parts inventory for your projects. It is extremely useful to always have a few parts on hand for when you need them. However, when salvaging parts, some devices prove more bountiful than others.</summary></entry><entry><title type="html">2015 Head Redesign</title><link href="http://salvius.org/blog/2015/06/head-design/" rel="alternate" type="text/html" title="2015 Head Redesign" /><published>2015-06-15T00:00:00+00:00</published><updated>2015-06-15T00:00:00+00:00</updated><id>http://salvius.org/blog/2015/06/head-design</id><content type="html" xml:base="http://salvius.org/blog/2015/06/head-design/">&lt;p&gt;&lt;img src=&quot;/images/posts/head_sketch.jpg&quot; alt=&quot;Robot head sketch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Redesign of where the camera mounts.&lt;/p&gt;
+
+&lt;p&gt;Simplification of the neck rotation mechanism.&lt;/p&gt;
+
+&lt;p&gt;Allow new face panels to be easily attached.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Speech Synthesis Options for Robotics</title><link href="http://salvius.org/blog/2014/11/speech/" rel="alternate" type="text/html" title="Speech Synthesis Options for Robotics" /><published>2014-11-04T00:00:00+00:00</published><updated>2014-11-04T00:00:00+00:00</updated><id>http://salvius.org/blog/2014/11/speech</id><content type="html" xml:base="http://salvius.org/blog/2014/11/speech/">&lt;p&gt;&lt;big&gt;
+    Language can become a barrier for humans and robots when trying to communicate.
+    The robot will have the ability to produce sounds in order to communicate with people,
+    animals and other robots.
+&lt;/big&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;options-for-speech&quot;&gt;Options for speech&lt;/h2&gt;
+
+&lt;p&gt;When I first started exploring ways to add speech to my robotics projects
+I was using a small FM transmitter to send audio to the robot. However, it can probably be agreed that just sticking a radio in the robot isn’t that cool. Instead we are going to look at a few of the different software and hardware required make this conversion.&lt;/p&gt;
+
+&lt;h2 id=&quot;operational-requirements&quot;&gt;Operational requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Can’t slow down other processes to generate the audio.&lt;/li&gt;
+  &lt;li&gt;Ability to stop speaking process on demand.&lt;/li&gt;
+  &lt;li&gt;Ability to queue tasks for processing.&lt;/li&gt;
+  &lt;li&gt;Ability to modify pronunciations as needed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;design-goal&quot;&gt;Design goal&lt;/h2&gt;
+
+&lt;p&gt;We are going to set up a dedicated speech processor that will receive text data from the robot’s main computer which it will then process into audio signals that can be understood as words. The following options list various pros and cons for available solutions that can handle speech synthesis on either the hardware &lt;strong&gt;or&lt;/strong&gt; software level.&lt;/p&gt;
+
+&lt;h3 id=&quot;arduino-for-speech-synthesis&quot;&gt;Arduino for speech synthesis&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Arduino board is low cost.&lt;/li&gt;
+  &lt;li&gt;Many programs for speech synthisis on an Arduino have already been created so very little needs to be created from scratch.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lowest quality audio output of all options&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;raspberry-pi-for-speech-synthesis&quot;&gt;Raspberry Pi for speech synthesis&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Install commonly used (free) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;espeak&lt;/code&gt; package.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Raspberry Pi might be overkill for just speech synthesis processing tasks alone.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;espeak-text-to-speech-module&quot;&gt;eSpeak text to speech module&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Takes the load of speech synthesis off of the robot’s main processor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;More expensive ($50 to $70)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;An amplifier will be required in either case to amplify the audio you generate for output through speakers.&lt;/p&gt;</content><author><name></name></author><summary type="html">Language can become a barrier for humans and robots when trying to communicate. The robot will have the ability to produce sounds in order to communicate with people, animals and other robots.</summary></entry><entry><title type="html">Fast, Cheap, and Out of Control</title><link href="http://salvius.org/blog/2014/10/robot/" rel="alternate" type="text/html" title="Fast, Cheap, and Out of Control" /><published>2014-10-12T00:00:00+00:00</published><updated>2014-10-12T00:00:00+00:00</updated><id>http://salvius.org/blog/2014/10/robot</id><content type="html" xml:base="http://salvius.org/blog/2014/10/robot/">&lt;p&gt;A hexapedal robot named Genghis was revealed by MIT in 1989. Genghis was famous for being made quickly and cheaply due to construction methods; Genghis used 4 microprocessors, 22 sensors, and 12 servo motors. Rodney Brooks and Anita M. Flynn published “Fast, Cheap, and Out of Control: A Robot Invasion of The Solar System”. The paper advocated creating smaller cheaper robots in greater numbers to increase production time and decrease the difficulty of launching robots into space.&lt;/p&gt;
+
+&lt;p&gt;http://people.csail.mit.edu/brooks/papers/fast-cheap.pdf&lt;/p&gt;</content><author><name></name></author><summary type="html">A hexapedal robot named Genghis was revealed by MIT in 1989. Genghis was famous for being made quickly and cheaply due to construction methods; Genghis used 4 microprocessors, 22 sensors, and 12 servo motors. Rodney Brooks and Anita M. Flynn published “Fast, Cheap, and Out of Control: A Robot Invasion of The Solar System”. The paper advocated creating smaller cheaper robots in greater numbers to increase production time and decrease the difficulty of launching robots into space.</summary></entry><entry><title type="html">Endoskeleton</title><link href="http://salvius.org/blog/2014/10/endoskeleton/" rel="alternate" type="text/html" title="Endoskeleton" /><published>2014-10-01T00:00:00+00:00</published><updated>2014-10-01T00:00:00+00:00</updated><id>http://salvius.org/blog/2014/10/endoskeleton</id><content type="html" xml:base="http://salvius.org/blog/2014/10/endoskeleton/">&lt;p&gt;An endoskeleton is an internal support structure of an animal, composed of mineralized tissue.&lt;/p&gt;
+
+&lt;p&gt;Endoskeleton develops within the skin or in the deeper body tissues. The vertebrate is basically an endoskeleton made up of two types of tissues (bone and cartilage). During early embryonic development the endoskeleton is composed of notochord and cartilage. The notochord in most vertebrates is replaced by vertebral column and cartilage is replaced by bone in most adults.In three phyla and one subclass of animals, endoskeletons of various complexity are found: Chordata, Echinodermata, Porifera, and Coleoidea. An endoskeleton may function purely for support (as in the case of sponges), but often serves as an attachment site for muscle and a mechanism for transmitting muscular forces. A true endoskeleton is derived from mesodermal tissue. Such a skeleton is present in echinoderms and chordates. The poriferan ‘skeleton’ consists of microscopic calcareous or siliceous spicules or a spongin network. The Coleoidae do not have a true endoskeleton in the evolutionary sense; here, a mollusk exoskeleton evolved into several sorts of internal structure, the “cuttlebone” of cuttlefish being the best-known version. Yet they do have cartilaginous tissue in their body, even if it is not mineralized, especially in the head, where it forms a primitive cranium.The endoskeleton gives shape,support and protection to the body and provides a means of locomotion.&lt;/p&gt;</content><author><name></name></author><summary type="html">An endoskeleton is an internal support structure of an animal, composed of mineralized tissue.</summary></entry><entry><title type="html">Choosing a licence for your robot’s software</title><link href="http://salvius.org/blog/2013/04/choosing-a-licence-for-your-robots-software/" rel="alternate" type="text/html" title="Choosing a licence for your robot’s software" /><published>2013-04-18T00:00:00+00:00</published><updated>2013-04-18T00:00:00+00:00</updated><id>http://salvius.org/blog/2013/04/choosing-a-licence-for-your-robots-software</id><content type="html" xml:base="http://salvius.org/blog/2013/04/choosing-a-licence-for-your-robots-software/">&lt;p&gt;I like to encourage developers and engineers to open source their robotics projects when possible. Obviously the nature of intellectual property and ownership does not always permit this, and there is still a great amount of proprietary software that many businesses rely on which cannot be open sourced.&lt;/p&gt;
+
+&lt;p&gt;However, all is not lost. There is many alternatives that make it possible to leverage the advantages of open source software while avoiding releasing proprietary code. As usual in development, abstraction is the key. Instead of releasing the entire sum of a project, try modularizing the codebase into one or more abstract library that can be released. The added advantage here is that the process of modularizing your codebase will significantly improve the readability and maintainability of your code.&lt;/p&gt;
+
+&lt;p&gt;There are a significant number of benefits to open sourcing a useful package or library. Aside from the possibility of allowing a community of other developers to double check your work and possibly improve it, an open source project can become a significant way for a single developer or a company to establish and maintain reputability.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to encourage developers and engineers to open source their robotics projects when possible. Obviously the nature of intellectual property and ownership does not always permit this, and there is still a great amount of proprietary software that many businesses rely on which cannot be open sourced.</summary></entry><entry><title type="html">Project History Summary 2008 to 2011</title><link href="http://salvius.org/blog/2011/01/project_history/" rel="alternate" type="text/html" title="Project History Summary 2008 to 2011" /><published>2011-01-01T00:00:00+00:00</published><updated>2011-01-01T00:00:00+00:00</updated><id>http://salvius.org/blog/2011/01/project_history</id><content type="html" xml:base="http://salvius.org/blog/2011/01/project_history/">&lt;ul&gt;
+  &lt;li&gt;08/15/11 - I will create a blog to talk about the robot.&lt;/li&gt;
+  &lt;li&gt;08/12/11 - Arduino arrived in mail, began programming it&lt;/li&gt;
+  &lt;li&gt;08/08/11 - Ordered Arduino Uno USB IO Board.&lt;/li&gt;
+  &lt;li&gt;08/07/11 - Tidied up electrical wires.&lt;/li&gt;
+  &lt;li&gt;07/28/11 - Installed 8 ohm speaker in head.&lt;/li&gt;
+  &lt;li&gt;07/15/11 - Configured computer.&lt;/li&gt;
+  &lt;li&gt;07/11/11 - Installed optical sensor panel and speaker in head.&lt;/li&gt;
+  &lt;li&gt;07/10/11 - Finished building new human-like head.&lt;/li&gt;
+  &lt;li&gt;05/16/11 - Broke laser cartridge, will have to get new one.&lt;/li&gt;
+  &lt;li&gt;05/15/11 - Installed optical sensors in mount.&lt;/li&gt;
+  &lt;li&gt;05/14/11 - Attached camera to sensor mount.&lt;/li&gt;
+  &lt;li&gt;05/13/11 - Cut plexiglass optical sensors mount.&lt;/li&gt;
+  &lt;li&gt;05/12/11 - Made template for optical sensors mount.&lt;/li&gt;
+  &lt;li&gt;05/11/11 - Removed and measured optical sensors from head.&lt;/li&gt;
+  &lt;li&gt;05/03/11 - Moved shoulder joint up higher so that it is 3.5 inches from top of shoulder.&lt;/li&gt;
+  &lt;li&gt;05/02/11 - Cut 18 inch replacement axial for arm joints.&lt;/li&gt;
+  &lt;li&gt;04/28/11 - Simplified audio amplifier.&lt;/li&gt;
+  &lt;li&gt;04/26/11 - Finished adapter to run radio off of psu.&lt;/li&gt;
+  &lt;li&gt;02/28/11 - Tested larger audio amplifier with stereo speakers.&lt;/li&gt;
+  &lt;li&gt;02/27/11 - Began work on servo controller for ear servos.&lt;/li&gt;
+  &lt;li&gt;02/26/11 - Added 3 watts of extra amplification to audio amplifier.&lt;/li&gt;
+  &lt;li&gt;02/25/11 - Tested cam and mic wireless connection.&lt;/li&gt;
+  &lt;li&gt;02/24/11 - Connected left arm wires to junction box.&lt;/li&gt;
+  &lt;li&gt;02/23/11 - Attached new wires to left arm motors.&lt;/li&gt;
+  &lt;li&gt;02/22/11 - Enabled two speakers for mono.&lt;/li&gt;
+  &lt;li&gt;02/21/11 - Assembled audio amplifier.&lt;/li&gt;
+  &lt;li&gt;02/20/11 - Installed radio.&lt;/li&gt;
+  &lt;li&gt;02/19/11 - Attached electronics to drive base.&lt;/li&gt;
+  &lt;li&gt;02/18/11 - Attached left arm to body.&lt;/li&gt;
+  &lt;li&gt;02/17/11 - Mounted upper-torso on drive base.&lt;/li&gt;
+  &lt;li&gt;02/16/11 - Assembled plywood drive base.&lt;/li&gt;
+  &lt;li&gt;02/15/11 - Reattached sensors and electronics to new head.&lt;/li&gt;
+  &lt;li&gt;02/14/11 - Salvaged two gear boxes and chain from older body design.&lt;/li&gt;
+  &lt;li&gt;02/13/11 - Robot Operating System (ROS) is a potential OS for robot.&lt;/li&gt;
+  &lt;li&gt;02/06/11 - Cut out metal parts for new head based on cardboard template.&lt;/li&gt;
+  &lt;li&gt;02/05/11 - Stereo speakers hooked up and functioning.&lt;/li&gt;
+  &lt;li&gt;02/04/11 - Attached temporary wires for neck joint.&lt;/li&gt;
+  &lt;li&gt;02/02/11 - Created neck joint.&lt;/li&gt;
+  &lt;li&gt;02/01/11 - Built new wooden cube shaped upper body for robot.&lt;/li&gt;
+  &lt;li&gt;01/27/11 - Began redesigning head due to problems with size and shape of previous version.&lt;/li&gt;
+  &lt;li&gt;08/24/10 - Upgraded to larger upper arm on left side with larger motor.&lt;/li&gt;
+  &lt;li&gt;08/20/10 - Development has begun on radio core.&lt;/li&gt;
+  &lt;li&gt;06/15/10 - Right hand is now able to reconfigure into drill driver.&lt;/li&gt;
+  &lt;li&gt;06/14/10 - Found an online suppler of muscle wire for nano-robots.&lt;/li&gt;
+  &lt;li&gt;05/05/10 - Finished installing right arm motor for wrist rotation.&lt;/li&gt;
+  &lt;li&gt;04/12/10 - Organized data files.&lt;/li&gt;
+  &lt;li&gt;03/01/10 - Robot now has limited speech and extremely pour motor control.&lt;/li&gt;
+  &lt;li&gt;02/27/10 - Someone to speak to the robot and the robot can to reply to the person.&lt;/li&gt;
+  &lt;li&gt;02/14/10 - Working on a design for a grabber to go on the flexible mobile arm.&lt;/li&gt;
+  &lt;li&gt;02/10/10 - Working on housing for custom power cell.&lt;/li&gt;
+  &lt;li&gt;02/07/10 - Working on navigational system.&lt;/li&gt;
+  &lt;li&gt;02/08/10 - New design for legs and feet will likely result in a more maneuverable torso.&lt;/li&gt;
+  &lt;li&gt;11/19/09 - Working on a design for legs to get the robot mobile.&lt;/li&gt;
+  &lt;li&gt;10/01/09 - The design for a bracket to attach the head to the neck has been made.&lt;/li&gt;
+  &lt;li&gt;08/29/09 - Brackets to hold the access panel in the back of the head closed have been installed.&lt;/li&gt;
+  &lt;li&gt;07/29/09 - The laser data transmitter circuit board is now finished.&lt;/li&gt;
+  &lt;li&gt;06/18/09 - The new head is being modified to use the sensors built for the older head.&lt;/li&gt;
+  &lt;li&gt;06/15/09 - Salvaged a sound amplifying circuit for microphone elements in ears.&lt;/li&gt;
+  &lt;li&gt;05/07/09 - Began redesigning robot’s head.&lt;/li&gt;
+  &lt;li&gt;04/26/09 - Made larger shoulder mount.&lt;/li&gt;
+  &lt;li&gt;04/18/09 - Upgraded left arm chain drive.&lt;/li&gt;
+  &lt;li&gt;04/15/09 - Made simple right arm.&lt;/li&gt;
+  &lt;li&gt;04/02/09 - Mount for legs and torso joint is installed.&lt;/li&gt;
+  &lt;li&gt;04/01/09 - Upgraded wrist joint.&lt;/li&gt;
+  &lt;li&gt;03/25/09 - Made simple left arm.&lt;/li&gt;
+  &lt;li&gt;03/23/09 - Reinforced Neck rotation joint.&lt;/li&gt;
+  &lt;li&gt;03/19/09 - Neck rotation joint installed.&lt;/li&gt;
+  &lt;li&gt;03/17/09 - Inserted grommet into hole in chest cover.&lt;/li&gt;
+  &lt;li&gt;03/16/09 - Chest cover panel is attached.&lt;/li&gt;
+  &lt;li&gt;11/09/08 - Mounted wire holders to secure wiring.&lt;/li&gt;
+  &lt;li&gt;11/08/08 - Installed Wire covers.&lt;/li&gt;
+  &lt;li&gt;11/07/08 - Attached motor wires.&lt;/li&gt;
+  &lt;li&gt;11/06/08 - Officially started building robot.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">08/15/11 - I will create a blog to talk about the robot. 08/12/11 - Arduino arrived in mail, began programming it 08/08/11 - Ordered Arduino Uno USB IO Board. 08/07/11 - Tidied up electrical wires. 07/28/11 - Installed 8 ohm speaker in head. 07/15/11 - Configured computer. 07/11/11 - Installed optical sensor panel and speaker in head. 07/10/11 - Finished building new human-like head. 05/16/11 - Broke laser cartridge, will have to get new one. 05/15/11 - Installed optical sensors in mount. 05/14/11 - Attached camera to sensor mount. 05/13/11 - Cut plexiglass optical sensors mount. 05/12/11 - Made template for optical sensors mount. 05/11/11 - Removed and measured optical sensors from head. 05/03/11 - Moved shoulder joint up higher so that it is 3.5 inches from top of shoulder. 05/02/11 - Cut 18 inch replacement axial for arm joints. 04/28/11 - Simplified audio amplifier. 04/26/11 - Finished adapter to run radio off of psu. 02/28/11 - Tested larger audio amplifier with stereo speakers. 02/27/11 - Began work on servo controller for ear servos. 02/26/11 - Added 3 watts of extra amplification to audio amplifier. 02/25/11 - Tested cam and mic wireless connection. 02/24/11 - Connected left arm wires to junction box. 02/23/11 - Attached new wires to left arm motors. 02/22/11 - Enabled two speakers for mono. 02/21/11 - Assembled audio amplifier. 02/20/11 - Installed radio. 02/19/11 - Attached electronics to drive base. 02/18/11 - Attached left arm to body. 02/17/11 - Mounted upper-torso on drive base. 02/16/11 - Assembled plywood drive base. 02/15/11 - Reattached sensors and electronics to new head. 02/14/11 - Salvaged two gear boxes and chain from older body design. 02/13/11 - Robot Operating System (ROS) is a potential OS for robot. 02/06/11 - Cut out metal parts for new head based on cardboard template. 02/05/11 - Stereo speakers hooked up and functioning. 02/04/11 - Attached temporary wires for neck joint. 02/02/11 - Created neck joint. 02/01/11 - Built new wooden cube shaped upper body for robot. 01/27/11 - Began redesigning head due to problems with size and shape of previous version. 08/24/10 - Upgraded to larger upper arm on left side with larger motor. 08/20/10 - Development has begun on radio core. 06/15/10 - Right hand is now able to reconfigure into drill driver. 06/14/10 - Found an online suppler of muscle wire for nano-robots. 05/05/10 - Finished installing right arm motor for wrist rotation. 04/12/10 - Organized data files. 03/01/10 - Robot now has limited speech and extremely pour motor control. 02/27/10 - Someone to speak to the robot and the robot can to reply to the person. 02/14/10 - Working on a design for a grabber to go on the flexible mobile arm. 02/10/10 - Working on housing for custom power cell. 02/07/10 - Working on navigational system. 02/08/10 - New design for legs and feet will likely result in a more maneuverable torso. 11/19/09 - Working on a design for legs to get the robot mobile. 10/01/09 - The design for a bracket to attach the head to the neck has been made. 08/29/09 - Brackets to hold the access panel in the back of the head closed have been installed. 07/29/09 - The laser data transmitter circuit board is now finished. 06/18/09 - The new head is being modified to use the sensors built for the older head. 06/15/09 - Salvaged a sound amplifying circuit for microphone elements in ears. 05/07/09 - Began redesigning robot’s head. 04/26/09 - Made larger shoulder mount. 04/18/09 - Upgraded left arm chain drive. 04/15/09 - Made simple right arm. 04/02/09 - Mount for legs and torso joint is installed. 04/01/09 - Upgraded wrist joint. 03/25/09 - Made simple left arm. 03/23/09 - Reinforced Neck rotation joint. 03/19/09 - Neck rotation joint installed. 03/17/09 - Inserted grommet into hole in chest cover. 03/16/09 - Chest cover panel is attached. 11/09/08 - Mounted wire holders to secure wiring. 11/08/08 - Installed Wire covers. 11/07/08 - Attached motor wires. 11/06/08 - Officially started building robot.</summary></entry></feed>

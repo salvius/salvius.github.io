@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+        <meta name="google-site-verification" content="ONW7FjhOnQbl0qdKKOUYXBxf-4ERt8FfB30p6dl0WUQ" />
+    
+        <meta content="http://salvius.org/images/main/succeed.jpg" property="og:image"/>
+    
+        <meta content="http://salvius.org/images/main/first_snow.jpg" property="og:image"/>
+    
+        <meta content="http://blog.salvius.org/2015/01/salvius-gives-thumbs-up-to-students-at.html" property="og:see_also"/>
+    
+        <meta content="http://blog.salvius.org/2014/11/grinspoon-entrepreneurship-conference.html" property="og:see_also"/>
+    
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <meta name="twitter:site" content="@salviusrobot">
+    
+        <meta name="twitter:creator" content="@salviusrobot">
+    
+        <meta name="twitter:title" content="A humanoid robot build using salvaged materials">
+    
+        <meta name="twitter:image:src" content="http://salvius.org/images/main/succeed.jpg">
+    
+        <meta property="og:type" content="product"/>
+    
+        <meta property="og:price:amount" content="{{ page.price }}"/>
+    
+        <meta property="og:price:currency" content="USD"/>
+    
+        <meta property="og:availability" content="preorder"/>
+    
+        <meta property="og:provider_name" content="Robot Store"/>
+    
+        <meta property="og:brand" content="Salvius"/>
+    
+        <meta name="msapplication-TileColor" content="#f15501"/>
+    
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+    
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+    
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+    
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+    
+
+    <meta content="Salvius the Robot" property="og:site_name"/>
+    <meta content="http://salvius.org" property="og:referenced"/>
+
+    <meta content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+    <meta name="twitter:description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials.">
+    <meta name="description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+
+    
+        <meta content="Countability of Infinite Sets" property="og:title"/>
+        <title>Countability of Infinite Sets</title>
+    
+
+    
+    <link rel="publisher" href="https://plus.google.com/+gunthercox"/>
+    
+
+	<link rel="stylesheet" href="/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+    
+
+    <link rel="canonical" href="http://salvius.org/notes/algorithms/countability-infinite-sets/"/>
+    <link rel="shortlink" href="http://salvius.org/notes/algorithms/countability-infinite-sets/"/>
+</head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="nav"  role="navigation">
+   <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Salvius the Robot</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="http://blog.salvius.org">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+        </a>
+    </li>
+    <li>
+        <a href="/blog/">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+            <sup style="color: #fbff6f">NEW</sup>
+        </a>
+    </li>
+    <li>
+        <a href="/donate/">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            Donate
+        </a>
+    </li>
+    <li>
+        <a href="/presentations/">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            Presentations
+        </a>
+    </li>
+    <li>
+        <a href="/tools/">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            Tools
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/gunthercox/Salvius" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            GitHub
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </div> 
+</div>
+
+<div class="margin-top">
+    <!-- Space under the fixed navbar -->
+</div>
+
+
+        <div class="container-fluid color-prestige">
+            <div class="row" style="padding: 20px 0px">
+                <div class="col-xs-4">
+                    
+                </div>
+                <div class="col-xs-4 text-center">
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/">Main</a>
+                </div>
+                <div class="col-xs-4 text-right">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/design/contrast/">Next</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container color-white post">
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h1>Countability of Infinite Sets</h1>
+                    <hr/>
+
+                    <p>Mathematicians know that different types of infinite sequences exist. Lets start off by discussing two different types of infinite sequences: <strong>countably infinite</strong> sequences and <strong>uncountably infinite</strong> sequences.</p>
+
+<h2 id="countably-infinite-sets">Countably Infinite Sets</h2>
+
+<p>Lets take a look at a small sample of the set of all binary strings. The set looks like the following:</p>
+
+<p>0, 1, 00, 01, 10, 11, 000, 101, …</p>
+
+<p>The set of all possible sets of binary strings is countably infinite. This is quite interesting because this means that the number of computer programs that can be written is also countable infinite. For the purpose of this example we can assume that a compiled program can be represented as a single binary string.</p>
+
+<h2 id="uncountably-infinite-sets">Uncountably Infinite Sets</h2>
+
+<p>To think about infinite sets that are uncountable, let us consider the following statement. <em>The set of all problems that exist is uncountable.</em> In other words, there is an infinite number of possible problems in the universe. Because there is a never ending number of problems, this means that there are problems which cannot be computed. This is because the number of programs that exist is countably infinite, but the number of problems is not.</p>
+
+<h2 id="the-set-of-natural-numbers">The set of Natural Numbers</h2>
+
+<p>The notation N represents the set of natural numbers.</p>
+
+<p>Some examples of subsets of N could be:</p>
+
+<p>Θ, {1}, {2}, {1, 2, 3}, {2, 4, 6, 8, …}, {1, 3, 5, 7, 9, …}, {2, 3, 5, 7, 11, …}, and so on.</p>
+
+<p>The notation 2<sup>N</sup> represents the power set of N. The power set of N is uncountable.</p>
+
+<p>We can prove that 2<sup>N</sup> is uncountable.</p>
+
+<p><strong>Proof:</strong> Suppose, to the contrary, that 2<sup>N</sup> is countably infinite.
+Then, there exists some countably infinite listing, say S1, S2, S3… of all possible subsets of the natural numbers of N.
+Consider the following chart.</p>
+
+<h2 id="cantors-diagonalization">Cantor’s Diagonalization</h2>
+
+<table>
+  <tbody>
+<tr>
+    <th></th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>...</th>
+  </tr>
+<tr>
+    <td>S1</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>S2</td>
+    <td>Y</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>S3</td>
+    <td>N</td>
+    <td>Y</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>S4</td>
+    <td>N</td>
+    <td>Y</td>
+    <td>N</td>
+    <td>Y</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>...</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody></table>
+
+<p>S = {1, 2, 3, …}</p>
+
+<p>Define a set S as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for each i = 1, 2, 3, ...
+    if i ∈ Si, then i ∉ S
+    if i ∉ Si, then i ∈ S
+</code></pre></div></div>
+
+<p>The set S is a subset of N
+but S ≠ Si for any i.
+In other words, S is not in the list of <strong>all</strong> possible subsets of N.
+Therefore 2<sup>N</sup> is uncountable.</p>
+
+<h2 id="future-writing">Future Writing</h2>
+
+<p>In my next post I will talk more about Cantor’s Denationalization within a three dimensional graph. I will also be introducing the continuum hypothesis which states that there is no set whose cardinality is strictly between that of the integers and the real numbers.</p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+	<div class="container-fluid color-rust">
+		<div class="row" style="padding: 15px 0px">
+	        <div class="col-xs-6">
+                <i>Copyright &copy; 2021 Gunther Cox</i>
+            </div>
+	        <div class="col-xs-6 text-right">
+                
+                    <a href="https://twitter.com/salviusrobot" aria-label="Twitter" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.facebook.com/salviusrobot" aria-label="Facebook" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.youtube.com/user/salviusrobot/videos" aria-label="YouTube" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12573345-9', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3019790405701706",
+            enable_page_level_ads: true
+          });
+        </script>
+    </body>
+</html>

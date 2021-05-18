@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+        <meta name="google-site-verification" content="ONW7FjhOnQbl0qdKKOUYXBxf-4ERt8FfB30p6dl0WUQ" />
+    
+        <meta content="http://salvius.org/images/main/succeed.jpg" property="og:image"/>
+    
+        <meta content="http://salvius.org/images/main/first_snow.jpg" property="og:image"/>
+    
+        <meta content="http://blog.salvius.org/2015/01/salvius-gives-thumbs-up-to-students-at.html" property="og:see_also"/>
+    
+        <meta content="http://blog.salvius.org/2014/11/grinspoon-entrepreneurship-conference.html" property="og:see_also"/>
+    
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <meta name="twitter:site" content="@salviusrobot">
+    
+        <meta name="twitter:creator" content="@salviusrobot">
+    
+        <meta name="twitter:title" content="A humanoid robot build using salvaged materials">
+    
+        <meta name="twitter:image:src" content="http://salvius.org/images/main/succeed.jpg">
+    
+        <meta property="og:type" content="product"/>
+    
+        <meta property="og:price:amount" content="{{ page.price }}"/>
+    
+        <meta property="og:price:currency" content="USD"/>
+    
+        <meta property="og:availability" content="preorder"/>
+    
+        <meta property="og:provider_name" content="Robot Store"/>
+    
+        <meta property="og:brand" content="Salvius"/>
+    
+        <meta name="msapplication-TileColor" content="#f15501"/>
+    
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+    
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+    
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+    
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+    
+
+    <meta content="Salvius the Robot" property="og:site_name"/>
+    <meta content="http://salvius.org" property="og:referenced"/>
+
+    <meta content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+    <meta name="twitter:description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials.">
+    <meta name="description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+
+    
+        <meta content="Contradiction" property="og:title"/>
+        <title>Contradiction</title>
+    
+
+    
+    <link rel="publisher" href="https://plus.google.com/+gunthercox"/>
+    
+
+	<link rel="stylesheet" href="/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+    
+
+    <link rel="canonical" href="http://salvius.org/notes/discrete-math/11-04-2014/"/>
+    <link rel="shortlink" href="http://salvius.org/notes/discrete-math/11-04-2014/"/>
+</head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="nav"  role="navigation">
+   <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Salvius the Robot</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="http://blog.salvius.org">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+        </a>
+    </li>
+    <li>
+        <a href="/blog/">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+            <sup style="color: #fbff6f">NEW</sup>
+        </a>
+    </li>
+    <li>
+        <a href="/donate/">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            Donate
+        </a>
+    </li>
+    <li>
+        <a href="/presentations/">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            Presentations
+        </a>
+    </li>
+    <li>
+        <a href="/tools/">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            Tools
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/gunthercox/Salvius" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            GitHub
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </div> 
+</div>
+
+<div class="margin-top">
+    <!-- Space under the fixed navbar -->
+</div>
+
+
+        <div class="container-fluid color-prestige">
+            <div class="row" style="padding: 20px 0px">
+                <div class="col-xs-4">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/discrete-math/10-23-2014/">Previous</a>
+                    
+                </div>
+                <div class="col-xs-4 text-center">
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/">Main</a>
+                </div>
+                <div class="col-xs-4 text-right">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/discrete-math/11-11-2014/">Next</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container color-white post">
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h1>Contradiction</h1>
+                    <hr/>
+
+                    <ul>
+  <li>Therem: Any integer n &gt; 1 is divisible by a prime number.</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>For any integer n &gt; 1, there exists a prime number p such that p</td>
+          <td>n.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Examples:<br />
+n = 2    p = 2    2|2<br />
+n = 3    p = 3    3|3<br />
+n = 7    p = 7    7|7</p>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>p        p        p</td>
+        <td>p</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>Theorem: Unique Factorization Theorem - Given any integer n &gt; 1, there exists a
+positive integer k and distinct prie numbers p1, p2, …, pk and positive
+integers e1, e2, …, ek such that n = p1, p2, …, pk and this factorization is
+unique (disreguarding the order of factors).</p>
+
+<ul>
+  <li><strong>Note:</strong> The number 1 is not prime.</li>
+  <li>Cryptography</li>
+  <li>RSA</li>
+  <li><strong>Note:</strong> A 200-digit number took 18 months and used over half a century of computing time.</li>
+</ul>
+
+<h1 id="proof-by-contradiction">Proof by Contradiction</h1>
+<blockquote>
+  <p><strong>Contradiction rule</strong>
+~p =&gt; c  (Where c is a contradiction)<br />
+Therefore P</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Proof by Contradiction</strong><br />
+Suppose, to the contrary, that <strong>p</strong> is false.<br />
+.<br />
+.<br />
+.<br />
+[Show some contradiction]<br />
+Therefore, P.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Theorem: There is no greatest integer.<br />
+Suppose, to the contrary, that there is a greatest integer, say N.<br />
+However, N + 1 is an integer and N + 1 &gt; N.<br />
+Threrfore, there is no greater integer.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Theorem: There is no smallest positive real number.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Theorem: The square root of 2 is irrational.<br />
+Suppose, to the contrary, that the square root of 2 is rational.<br />
+Then there exist integers a and b with b != 0
+such that the square root of 2 != a/b and we assume that a/b is in lowest terms.<br />
+Squaring both sides, we have 2 = a^2/b^2 or 2b^2 = a^2.<br />
+Now since b^2 is an integer, 2b^2 is even.<br />
+Thus a^2 is even, which implies a is even.<br />
+Thus a = 2k for some integer k. It follows that 2b^2 = (2k)^2 = 4k^2.<br />
+So b^2 = 2k^2. Hence b^2 is even, implying b is even.<br />
+So b = 2l for some integer l. But this contradicts that a/b is in lowest terms.<br />
+Therefore the square root of 2 is irrational.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Alternate Example</strong><br />
+Unique Factorization Theorem</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Lemma: For any integer a and prime p, if p|a, then p /| (a+1).<br />
+Proof: Suppose not. That there exists an integer a and a prime p
+such that p|a and p|(a+1).<br />
+Then a = pr for some integer r<br />
+and a+1 = ps for some integer s.<br />
+Subtracting, we get 1 = a + 1 = a = ps - pr = p(s-r).<br />
+Thus p|1. So p = 1 or p = -1.<br />
+This contridicts that p is prime (p &gt;= 2).</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Theorem: There are infinately many primes.<br />
+Proof: Suppose to the contrary, that there are <strong>finitely</strong> many primes
+p1, p2, …, pk. Let a = p1, p2, …, pk. Notice that each pi divides a.<br />
+Thus pi /| (a+1). So the integer a+1 has no other prime divisors and thus must be prime.<br />
+But this contradicts that the list of p1, p2, …, pk contained all possible primes.</p>
+</blockquote>
+
+<h1 id="proof-by-cases">Proof by cases</h1>
+<p>Two integers m and n have the same parity if they are either both even or both odd.</p>
+
+<p><strong>Theorem:</strong> For every two integers m and n,
+3m + 5 is even if and only if m and n have
+the same parity.</p>
+
+<blockquote>
+  <p>Proof (&lt;=) Proove if m and n have the same parity, then 3m + 5n is even.<br />
+Assume m and n have the same parity.<br />
+Case 1: m and n are both even.<br />
+    [Proove 3m + 5n is even]<br />
+Case 2: m and n are both odd.<br />
+    [Proove 3m + 5n is even.]</p>
+
+  <p>(=&gt;) Prove if 3m + 5n is even, then m and n have the same parity (by contrapositive).<br />
+Assume m and n have opposite parity.<br />
+Case 1: m is even and n is odd.<br />
+    [Prove 3m + 5n is odd.]<br />
+Case 2: m is odd and n is even.<br />
+    [Proove 3m + 5n is odd.]</p>
+</blockquote>
+
+<p><strong>Result:</strong> For any sets A, B, and C, (A-B) ⋃ (A-C) = A - (B ⋂ C)</p>
+
+<blockquote>
+  <p><strong>Proof:</strong> First we show (A-B) ⋃ (A-C) ⊆ A - (B ⋂ C)<br />
+    Let x ∈ (A-B) ⋃ (A-C).<br />
+    Then x x ∈ A-B <strong>OR</strong> x ∈ A-C<br />
+    Case 1: x ∈ A - B<br />
+        [Show x ∈ A - (B ⋂ C)]<br />
+    Case 2: x ∈ A - C<br />
+        [Show x ∈ A - (B ⋂ C)]</p>
+</blockquote>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+	<div class="container-fluid color-rust">
+		<div class="row" style="padding: 15px 0px">
+	        <div class="col-xs-6">
+                <i>Copyright &copy; 2021 Gunther Cox</i>
+            </div>
+	        <div class="col-xs-6 text-right">
+                
+                    <a href="https://twitter.com/salviusrobot" aria-label="Twitter" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.facebook.com/salviusrobot" aria-label="Facebook" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.youtube.com/user/salviusrobot/videos" aria-label="YouTube" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12573345-9', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3019790405701706",
+            enable_page_level_ads: true
+          });
+        </script>
+    </body>
+</html>

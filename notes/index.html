@@ -1,0 +1,3022 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+        <meta name="google-site-verification" content="ONW7FjhOnQbl0qdKKOUYXBxf-4ERt8FfB30p6dl0WUQ" />
+    
+        <meta content="http://salvius.org/images/main/succeed.jpg" property="og:image"/>
+    
+        <meta content="http://salvius.org/images/main/first_snow.jpg" property="og:image"/>
+    
+        <meta content="http://blog.salvius.org/2015/01/salvius-gives-thumbs-up-to-students-at.html" property="og:see_also"/>
+    
+        <meta content="http://blog.salvius.org/2014/11/grinspoon-entrepreneurship-conference.html" property="og:see_also"/>
+    
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <meta name="twitter:site" content="@salviusrobot">
+    
+        <meta name="twitter:creator" content="@salviusrobot">
+    
+        <meta name="twitter:title" content="A humanoid robot build using salvaged materials">
+    
+        <meta name="twitter:image:src" content="http://salvius.org/images/main/succeed.jpg">
+    
+        <meta property="og:type" content="product"/>
+    
+        <meta property="og:price:amount" content="{{ page.price }}"/>
+    
+        <meta property="og:price:currency" content="USD"/>
+    
+        <meta property="og:availability" content="preorder"/>
+    
+        <meta property="og:provider_name" content="Robot Store"/>
+    
+        <meta property="og:brand" content="Salvius"/>
+    
+        <meta name="msapplication-TileColor" content="#f15501"/>
+    
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+    
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+    
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+    
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+    
+
+    <meta content="Salvius the Robot" property="og:site_name"/>
+    <meta content="http://salvius.org" property="og:referenced"/>
+
+    <meta content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+    <meta name="twitter:description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials.">
+    <meta name="description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+
+    
+        <meta content="Notebook" property="og:title"/>
+        <title>Notebook</title>
+    
+
+    
+    <link rel="publisher" href="https://plus.google.com/+gunthercox"/>
+    
+
+	<link rel="stylesheet" href="/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+    
+
+    <link rel="canonical" href="http://salvius.org/notes/"/>
+    <link rel="shortlink" href="http://salvius.org/notes/"/>
+</head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="nav"  role="navigation">
+   <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Salvius the Robot</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="http://blog.salvius.org">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+        </a>
+    </li>
+    <li>
+        <a href="/blog/">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+            <sup style="color: #fbff6f">NEW</sup>
+        </a>
+    </li>
+    <li>
+        <a href="/donate/">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            Donate
+        </a>
+    </li>
+    <li>
+        <a href="/presentations/">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            Presentations
+        </a>
+    </li>
+    <li>
+        <a href="/tools/">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            Tools
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/gunthercox/Salvius" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            GitHub
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </div> 
+</div>
+
+<div class="margin-top">
+    <!-- Space under the fixed navbar -->
+</div>
+
+
+        <div class="container-fluid color-prestige inset-shadow">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Class notes</h1>
+
+            <p class="lead">
+                This is a random collection of notes that I
+                have accumulated from various classes that I
+                have taken.<br/>
+                Hosting them here is mainly to help me stay
+                organized and be able to find them.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container color-white">
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/algorithms/countability-infinite-sets/">
+                    <h1>Countability of Infinite Sets</h1>
+                </a>
+                <hr/>
+
+                <p>Mathematicians know that different types of infinite sequences exist. Lets start off by discussing two different types of infinite sequences: <strong>countably infinite</strong> sequences and <strong>uncountably infinite</strong> sequences.</p>
+
+<h2 id="countably-infinite-sets">Countably Infinite Sets</h2>
+
+<p>Lets take a look at a small sample of the set of all binary strings. The set looks like the following:</p>
+
+<p>0, 1, 00, 01, 10, 11, 000, 101, …</p>
+
+<p>The set of all possible sets of binary strings is countably infinite. This is quite interesting because this means that the number of computer programs that can be written is also countable infinite. For the purpose of this example we can assume that a compiled program can be represented as a single binary string.</p>
+
+<h2 id="uncountably-infinite-sets">Uncountably Infinite Sets</h2>
+
+<p>To think about infinite sets that are uncountable, let us consider the following statement. <em>The set of all problems that exist is uncountable.</em> In other words, there is an infinite number of possible problems in the universe. Because there is a never ending number of problems, this means that there are problems which cannot be computed. This is because the number of programs that exist is countably infinite, but the number of problems is not.</p>
+
+<h2 id="the-set-of-natural-numbers">The set of Natural Numbers</h2>
+
+<p>The notation N represents the set of natural numbers.</p>
+
+<p>Some examples of subsets of N could be:</p>
+
+<p>Θ, {1}, {2}, {1, 2, 3}, {2, 4, 6, 8, …}, {1, 3, 5, 7, 9, …}, {2, 3, 5, 7, 11, …}, and so on.</p>
+
+<p>The notation 2<sup>N</sup> represents the power set of N. The power set of N is uncountable.</p>
+
+<p>We can prove that 2<sup>N</sup> is uncountable.</p>
+
+<p><strong>Proof:</strong> Suppose, to the contrary, that 2<sup>N</sup> is countably infinite.
+Then, there exists some countably infinite listing, say S1, S2, S3… of all possible subsets of the natural numbers of N.
+Consider the following chart.</p>
+
+<h2 id="cantors-diagonalization">Cantor’s Diagonalization</h2>
+
+<table>
+  <tbody>
+<tr>
+    <th></th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>...</th>
+  </tr>
+<tr>
+    <td>S1</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>S2</td>
+    <td>Y</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>S3</td>
+    <td>N</td>
+    <td>Y</td>
+    <td>N</td>
+    <td>N</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>S4</td>
+    <td>N</td>
+    <td>Y</td>
+    <td>N</td>
+    <td>Y</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>...</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody></table>
+
+<p>S = {1, 2, 3, …}</p>
+
+<p>Define a set S as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for each i = 1, 2, 3, ...
+    if i ∈ Si, then i ∉ S
+    if i ∉ Si, then i ∈ S
+</code></pre></div></div>
+
+<p>The set S is a subset of N
+but S ≠ Si for any i.
+In other words, S is not in the list of <strong>all</strong> possible subsets of N.
+Therefore 2<sup>N</sup> is uncountable.</p>
+
+<h2 id="future-writing">Future Writing</h2>
+
+<p>In my next post I will talk more about Cantor’s Denationalization within a three dimensional graph. I will also be introducing the continuum hypothesis which states that there is no set whose cardinality is strictly between that of the integers and the real numbers.</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/design/contrast/">
+                    <h1>Effective color pallet</h1>
+                </a>
+                <hr/>
+
+                <style>
+    .effective {
+        color: #a9306f;
+        background: #c7e4d3;
+        padding: 15px;
+        font-size: 50px;
+    }
+    .effective .content {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background: #a9306f;
+    }
+    .ineffective {
+        color: #79c19e;
+        background: #fcd3c4;
+        padding: 15px;
+        font-size: 50px;
+    }
+    .ineffective .content {
+        height: 50px;
+        width: 50px;
+        background: #79c19e;
+    }
+
+    .pie-chart {
+        height: 400px;
+    }
+
+    .pie {
+		position:absolute;
+		width:200px;
+		height:400px;
+		overflow:hidden;
+		left:300px;
+		-webkit-transform-origin:left center;
+		transform-origin:left center;
+	}
+
+	.pie:BEFORE {
+		content:"";
+		position:absolute;
+		width:200px;
+		height:400px;
+		left:-200px;
+		border-radius:200px 0 0 200px;
+		-webkit-transform-origin:right center;
+		transform-origin:right center;
+	}
+
+    .pie:nth-of-type(1):BEFORE,
+	.pie:nth-of-type(1):AFTER {
+		background-color: #ffe800;	
+	}
+	.pie:nth-of-type(2):AFTER,
+	.pie:nth-of-type(2):BEFORE {
+		background-color: #f58220;	
+	}
+	.pie:nth-of-type(3):AFTER,
+	.pie:nth-of-type(3):BEFORE {
+		background-color: #ed1b2f;	
+	}
+	.pie:nth-of-type(4):AFTER,
+	.pie:nth-of-type(4):BEFORE {
+		background-color: #a9306f;	
+	}
+	.pie:nth-of-type(5):AFTER,
+	.pie:nth-of-type(5):BEFORE {
+		background-color: #3d6ab3;	
+	}
+	.pie:nth-of-type(6):AFTER,
+	.pie:nth-of-type(6):BEFORE {
+		background-color: #0092c8;	
+	}
+	.pie:nth-of-type(7):AFTER,
+	.pie:nth-of-type(7):BEFORE {
+		background-color: #009c9e;	
+	}
+	.pie:nth-of-type(8):AFTER,
+	.pie:nth-of-type(8):BEFORE {
+		background-color: #009956;	
+	}
+
+	.pie[data-start="45"] {
+		-webkit-transform: rotate(45deg);
+		transform:rotate(45deg);
+	}
+	.pie[data-start="90"] {
+		-webkit-transform: rotate(90deg);
+		transform:rotate(90deg);
+	}
+	.pie[data-start="135"] {
+		-webkit-transform: rotate(135deg);
+		transform:rotate(135deg);
+	}
+	.pie[data-start="180"] {
+		-webkit-transform: rotate(180deg);
+		transform:rotate(180deg);
+	}
+	.pie[data-start="225"] {
+		-webkit-transform: rotate(225deg);
+		transform:rotate(225deg);
+	}
+	.pie[data-start="270"] {
+		-webkit-transform: rotate(270deg);
+		transform:rotate(270deg);
+	}
+	.pie[data-start="315"] {
+		-webkit-transform: rotate(315deg);
+		transform:rotate(315deg);
+	}
+
+	.pie[data-value="45"]:BEFORE {
+		-webkit-transform: rotate(45deg);
+		transform:rotate(45deg);
+	}
+
+    .contrast {
+        height: 60px;
+        width: 60px;
+        background: #000;
+        border-radius: 30px;
+        position: absolute;
+        margin: 30px;
+    }
+
+    .contrast-1 {
+		background-color: #ffe800;
+	}
+    .contrast-2 {
+		background-color: #f58220;
+	}
+    .contrast-3 {
+		background-color: #ed1b2f;
+	}
+    .contrast-4 {
+		background-color: #a9306f;
+	}
+    .contrast-5 {
+		background-color: #3d6ab3;
+	}
+    .contrast-6 {
+		background-color: #0092c8;
+	}
+    .contrast-7 {
+		background-color: #009c9e;
+	}
+    .contrast-8 {
+		background-color: #009956;
+	}
+</style>
+
+<table>
+    <tr>
+        <td class="effective">
+            <div class="content"></div>
+        </td>
+        <td class="effective">
+            Effective
+        </td>
+    </tr>
+    <tr>
+        <td class="ineffective">
+            <div class="content"></div>
+        </td>
+        <td class="ineffective">
+            Not as effective
+        </td>
+    </tr>
+</table>
+
+<hr/>
+
+<div class="pie-chart">
+    <div class="pie" data-start="0" data-value="45">
+        <div class="contrast contrast-5"></div>
+    </div>
+    <div class="pie" data-start="45" data-value="45">
+        <div class="contrast contrast-6"></div>
+    </div>
+    <div class="pie" data-start="90" data-value="45">
+        <div class="contrast contrast-7"></div>
+    </div>
+    <div class="pie" data-start="135" data-value="45">
+        <div class="contrast contrast-8"></div>
+    </div>
+    <div class="pie" data-start="180" data-value="45">
+        <div class="contrast contrast-1"></div>
+    </div>
+    <div class="pie" data-start="225" data-value="45">
+        <div class="contrast contrast-2"></div>
+    </div>
+    <div class="pie" data-start="270" data-value="45">
+        <div class="contrast contrast-3"></div>
+    </div>
+    <div class="pie" data-start="315" data-value="45">
+        <div class="contrast contrast-4"></div>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/discrete-math/10-09-2014/">
+                    <h1>Definitions</h1>
+                </a>
+                <hr/>
+
+                <ol>
+  <li>if n is even, then 3n<sup>2</sup> + 5 is odd.</li>
+</ol>
+
+<p>n is even           n = 2k</p>
+
+<p>direct:</p>
+
+<p>if n<sup>2</sup> + 8 is even, then n is even.
+n<sup>2</sup> is even               if n is odd, then n<sup>2</sup> + 8 is odd
+n<sup>2</sup> = 2k                  n is odd
+.                                   n = 2k + 1
+.                                   .
+.                                   .
+n = 2(___)                          contrapositive</p>
+
+<p>If A is an underlined subset of B, then A (upside down U) is an underlined subset of B (upside down U) C
+Assume A underlined subset B.
+direct</p>
+
+<p>New Topic:
+15 = 3 * 5</p>
+<blockquote>
+  <p>3 is a factor if 15
+3 is a divisor of 15
+15 is a multiple of 3
+15 is divisible by 3</p>
+</blockquote>
+
+<p><strong>Definition:</strong> For integers a and b with b != 0, we say
+that b divides a if a = bc for some integer c. We write b|a</p>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>3 divides 15 because 15 = 3 * 5                       3</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>2 /</td>
+        <td>15 (char needs to be replaced with a bar with a slash through it)</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>All of these statements mean the same thing:</p>
+<blockquote>
+  <p>b is a divisor of a<br />
+b is a factor of a<br />
+a is a multiple of b<br />
+a is divisiable by b</p>
+</blockquote>
+
+<blockquote>
+  <p>-3 divides 15 since 15 = (-3)(-5)
+4|0                  0 = 4 * 0
+7|0
+12|0
+-42|0</p>
+</blockquote>
+
+<p>not allowed:
+0|0
+because: 0 = 0 * x where x is not unique.</p>
+
+<p>Example:
+Find all positive divisors of 12.
+1, 2, 3, 4, 6, 12</p>
+
+<blockquote>
+  <p>1 * 12 = 12
+2 * 6 = 12
+3 * 4 = 12</p>
+</blockquote>
+
+<p><strong>Definition of a prime</strong></p>
+<ol>
+  <li>A prime is any <strong>non-zero</strong> <strong>positive</strong> <strong>integer</strong> that is <strong>only</strong> divisible by 1 and itself.</li>
+  <li>A integer is prime if its only positive divisors are 1 and itself.</li>
+  <li><strong>An integer p is prime if it has exactly two different positive divisors.</strong></li>
+  <li>An integer n &gt; 1 is prime if and only if for all positive integers r and s, if n = rs, then r = 1 or s = 1.</li>
+</ol>
+
+<p><strong>Primes</strong>
+2, 3, 5, 7, 11, 13, 17…</p>
+
+<p><strong>Definition of a composit</strong></p>
+<ol>
+  <li>An integer n &gt; 1 is composit if it is not prime.</li>
+  <li>An integer n is composit if there exist integers a and b with 1 &lt; a &lt; n and 1 &lt; b &lt; n such that n = ab.</li>
+  <li>There exit positive integers r and s such that n = rs and r != 1 and s != 1.</li>
+</ol>
+
+<p>Is 5377 prime?
+2 /| 5377
+3 /| 3577    5 + 3 + 7 + 7 = 22   3 /| 22
+5 /| 5377
+7 /| 5377    7 root(5377)
+root(5377) is roughly equal to 73</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>boolean isPrime(int n) {
+
+    if (n &lt;= 1) {
+        // Fail fast if n is zero or negative
+        return false;
+    }
+
+    for (int d = 2; d &lt;= (int)Math.sqrt(n); d++) {
+        if (n % d == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+</code></pre></div></div>
+
+<p><strong>Result:</strong> For all n &gt; 1, if n is <strong>not</strong> divisible by any positive integer
+that is greater than 1 and less than or equal to sqrt(n), then n is prime.</p>
+
+<p><strong>Proof:</strong> (by contrapositive)
+Let n &gt; 1 be an integer. Assume n is composite. Then there exist
+integers r and s with 1 &lt; r &lt; n and 1 &lt; s &lt; n such that n = rs.
+Furthermore it is imposible for both r &gt; sqrt(n) and s &gt; sqrt(n) for
+otherwise n = rs &gt; sqrt(n) * sqrt(n) = n. So either 1 &lt; r &lt;= sqrt(n) or
+1 &lt; s &lt;= sqrt(n)&gt; Thus n <strong>is</strong> divisible by a positive integer that is
+greater than 1 and less than of equal to sqrt(n).</p>
+
+<p><strong>The Sieve of Eratosthenes</strong></p>
+
+<p><strong>History:</strong></p>
+
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/discrete-math/10-16-2014/">
+                    <h1>Negation</h1>
+                </a>
+                <hr/>
+
+                <p>Def. An integer n &gt; 1 is composit if and only if there exist positive integers r and s such that n = rs and r != 1 and s != 1.</p>
+
+<p>Def. An integer n &gt; 1 is prime if and only if for all positive integers r and s, if n = rs, then r = 1 or s = 1.</p>
+
+<p>Prove or Disprove:</p>
+<blockquote>
+  <ol>
+    <li>For every positive integer n, the integer 3n is composit.<br />
+False (universally quantified –&gt; disprove)<br />
+Counter example: Let n = 1. Then 3n = 3 * 1 = 3, which is prime.</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <ol>
+    <li>There exists an integer m such that m^2 - 1 is prime.<br />
+True (existentially quantified –&gt; proove)<br />
+Proof: Let m = 2. Then m^2 - 1 = 2^2 -1 = 3, which is prime</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <ol>
+    <li>For all positive integers n, 2n^2 + 4 is composite.
+<em>Factor:</em> 2n^2 + 4 = 2(n^2 + 2)
+True (universlly quantified), this expression can be factored into two statements, neither of which are composit.
+Proof: Let n be any positive integer. Then 2n^2 + 4 = 2(n^2 + 2). So 2 and n^2 + 2 are both integers.
+And 2 != 1, also n^2 + 2 &gt;= 1^2 + 2 = 3. Thus n^2 + 2 != 1. Therefore 2n^2 + 4 is composite.</li>
+  </ol>
+</blockquote>
+
+<blockquote>
+  <ol>
+    <li>There exists a positive integer n such that n^2 + 3n + 2 is prime.
+False (existentialy quantified) we know this is false because n^2 + 3n + 2 = (n + 2)(n + 1) &lt;– that factors to two expressions where neither is equal to 1
+Prove: <strong>For all</strong> positive integers n, n^2 + 3n + 2 is composite.
+Disproof: Let n be a positive integer. Then
+n^2 + 2n + 2 = (n + 1)(n + 2). Observe n+ 1 and n+ 2are positive integers and
+n + 2 != 1 since n + 2 &gt;= 3. Therefore n^3 + 3n + 2 is composite.</li>
+  </ol>
+</blockquote>
+
+<h1 id="summary">Summary:</h1>
+
+<p>Proove P =&gt; Q
+Direct proof: Assume P. Proove Q.
+Proof by contrapositive: Assume ~Q. Proove ~P.</p>
+
+<p><strong>Universal</strong>
+for all x, P(x)
+proof: Let x be arbitrary</p>
+
+<p>True:
+(don’t argue from an example)</p>
+
+<p>False:
+counter example
+let x = _____
+Show ~P(x)</p>
+
+<p><strong>Existential</strong>
+there exists x such that</p>
+
+<p>True:
+proof: Let x = _____
+(okey to argue from an example)</p>
+
+<p>False
+Disproof: For all x, ~P(x)
+Let x be arbitrary
+Proove ~P(x)</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/discrete-math/10-23-2014/">
+                    <h1>Divisibility</h1>
+                </a>
+                <hr/>
+
+                <p>Def For integers a and b with b ≠ 0,
+we say that b divides a, written b|a
+if and only if a = b * c for some integer c.</p>
+
+<blockquote>
+  <p>2|10 because 10 = 2 * 5 and 5 ∈ ℤ.<br />
+4∤22 because 22 != 4 * c for any integer c there is no integer c such that 22 = 4c.</p>
+</blockquote>
+
+<h2 id="properties-of-divisibility">Properties of Divisibility</h2>
+<ul>
+  <li><strong>Transative</strong> For integers a, b, c, if a|b and b|c, then a|c.
+    <blockquote>
+      <p><strong>Proof:</strong> Let a, b, c, be integers.<br />
+Assume a|b and b|c.<br />
+So b = a * c for some integer x and<br />
+c = b * y for some integer y.<br />
+Thus c = a * x * y = a(xy). Since x and y are integers<br />
+we know xy is an integer.<br />
+Thus a|c.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="divisibility-test">Divisibility Test</h2>
+<blockquote>
+  <p>6|n   &lt;=&gt;   2|n and 3|n<br />
+ab|c  &lt;=    a|c and b|c<br />
+<em>Notice:</em> The use of the <em>Walker Property</em> in this example.
+<strong>Result:</strong> For integers a, b, c, if<br />
+a|c and b|c, then ab|c.<br />
+<strong>Proof:</strong> Let a, b, c be integers.<br />
+Assume a|b anf b|c.<br />
+Then c = ax and c = by for some integers x and y.<br />
+<em>At this point we see that there was a problem in prooving this.</em><br />
+<strong>Counterexample:</strong> a = 2   b = 4   c = 12<br />
+2|12   and   4|14<br />
+2 * 4 = 8   and   8∤12.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Result:</strong> (Anti-Walker Property)<br />
+For integers a, b, c, if ab|c, then a|c and b|c.<br />
+<strong>Proof:</strong> Let a, b, c, be integers.<br />
+Assume ab|c. Then c = ab*x for some integer x.<br />
+Thus c = a(bx) and we know bx ∈ ℤ. So a|c.<br />
+Also c = b * (ax) and we know ax ∈ ℤ.<br />
+Thus b|c.</p>
+</blockquote>
+
+<ul>
+  <li><strong>True or False (proove or disproove)</strong>
+    <ol>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>b and a</td>
+              <td>c, then a</td>
+              <td>bc.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>bc, then a</td>
+              <td>b and a</td>
+              <td>c.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>bc, then a</td>
+              <td>b or a</td>
+              <td>c.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>b and b</td>
+              <td>d, then ac</td>
+              <td>bd.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>If a</td>
+              <td>b and c</td>
+              <td>d, then a+c</td>
+              <td>b+d.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/discrete-math/11-04-2014/">
+                    <h1>Contradiction</h1>
+                </a>
+                <hr/>
+
+                <ul>
+  <li>Therem: Any integer n &gt; 1 is divisible by a prime number.</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>For any integer n &gt; 1, there exists a prime number p such that p</td>
+          <td>n.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Examples:<br />
+n = 2    p = 2    2|2<br />
+n = 3    p = 3    3|3<br />
+n = 7    p = 7    7|7</p>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>p        p        p</td>
+        <td>p</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>Theorem: Unique Factorization Theorem - Given any integer n &gt; 1, there exists a
+positive integer k and distinct prie numbers p1, p2, …, pk and positive
+integers e1, e2, …, ek such that n = p1, p2, …, pk and this factorization is
+unique (disreguarding the order of factors).</p>
+
+<ul>
+  <li><strong>Note:</strong> The number 1 is not prime.</li>
+  <li>Cryptography</li>
+  <li>RSA</li>
+  <li><strong>Note:</strong> A 200-digit number took 18 months and used over half a century of computing time.</li>
+</ul>
+
+<h1 id="proof-by-contradiction">Proof by Contradiction</h1>
+<blockquote>
+  <p><strong>Contradiction rule</strong>
+~p =&gt; c  (Where c is a contradiction)<br />
+Therefore P</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Proof by Contradiction</strong><br />
+Suppose, to the contrary, that <strong>p</strong> is false.<br />
+.<br />
+.<br />
+.<br />
+[Show some contradiction]<br />
+Therefore, P.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Theorem: There is no greatest integer.<br />
+Suppose, to the contrary, that there is a greatest integer, say N.<br />
+However, N + 1 is an integer and N + 1 &gt; N.<br />
+Threrfore, there is no greater integer.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Theorem: There is no smallest positive real number.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Theorem: The square root of 2 is irrational.<br />
+Suppose, to the contrary, that the square root of 2 is rational.<br />
+Then there exist integers a and b with b != 0
+such that the square root of 2 != a/b and we assume that a/b is in lowest terms.<br />
+Squaring both sides, we have 2 = a^2/b^2 or 2b^2 = a^2.<br />
+Now since b^2 is an integer, 2b^2 is even.<br />
+Thus a^2 is even, which implies a is even.<br />
+Thus a = 2k for some integer k. It follows that 2b^2 = (2k)^2 = 4k^2.<br />
+So b^2 = 2k^2. Hence b^2 is even, implying b is even.<br />
+So b = 2l for some integer l. But this contradicts that a/b is in lowest terms.<br />
+Therefore the square root of 2 is irrational.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Alternate Example</strong><br />
+Unique Factorization Theorem</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Lemma: For any integer a and prime p, if p|a, then p /| (a+1).<br />
+Proof: Suppose not. That there exists an integer a and a prime p
+such that p|a and p|(a+1).<br />
+Then a = pr for some integer r<br />
+and a+1 = ps for some integer s.<br />
+Subtracting, we get 1 = a + 1 = a = ps - pr = p(s-r).<br />
+Thus p|1. So p = 1 or p = -1.<br />
+This contridicts that p is prime (p &gt;= 2).</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Example</strong><br />
+Theorem: There are infinately many primes.<br />
+Proof: Suppose to the contrary, that there are <strong>finitely</strong> many primes
+p1, p2, …, pk. Let a = p1, p2, …, pk. Notice that each pi divides a.<br />
+Thus pi /| (a+1). So the integer a+1 has no other prime divisors and thus must be prime.<br />
+But this contradicts that the list of p1, p2, …, pk contained all possible primes.</p>
+</blockquote>
+
+<h1 id="proof-by-cases">Proof by cases</h1>
+<p>Two integers m and n have the same parity if they are either both even or both odd.</p>
+
+<p><strong>Theorem:</strong> For every two integers m and n,
+3m + 5 is even if and only if m and n have
+the same parity.</p>
+
+<blockquote>
+  <p>Proof (&lt;=) Proove if m and n have the same parity, then 3m + 5n is even.<br />
+Assume m and n have the same parity.<br />
+Case 1: m and n are both even.<br />
+    [Proove 3m + 5n is even]<br />
+Case 2: m and n are both odd.<br />
+    [Proove 3m + 5n is even.]</p>
+
+  <p>(=&gt;) Prove if 3m + 5n is even, then m and n have the same parity (by contrapositive).<br />
+Assume m and n have opposite parity.<br />
+Case 1: m is even and n is odd.<br />
+    [Prove 3m + 5n is odd.]<br />
+Case 2: m is odd and n is even.<br />
+    [Proove 3m + 5n is odd.]</p>
+</blockquote>
+
+<p><strong>Result:</strong> For any sets A, B, and C, (A-B) ⋃ (A-C) = A - (B ⋂ C)</p>
+
+<blockquote>
+  <p><strong>Proof:</strong> First we show (A-B) ⋃ (A-C) ⊆ A - (B ⋂ C)<br />
+    Let x ∈ (A-B) ⋃ (A-C).<br />
+    Then x x ∈ A-B <strong>OR</strong> x ∈ A-C<br />
+    Case 1: x ∈ A - B<br />
+        [Show x ∈ A - (B ⋂ C)]<br />
+    Case 2: x ∈ A - C<br />
+        [Show x ∈ A - (B ⋂ C)]</p>
+</blockquote>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/discrete-math/11-11-2014/">
+                    <h1>Induction</h1>
+                </a>
+                <hr/>
+
+                <h1 id="sequences">Sequences</h1>
+
+<blockquote>
+  <p>2, 4, 6, 8, 10, …<br />
+1, 2, 4, 8, 16, …<br />
+1/2, 2/3, 3/4, 4/5, …</p>
+</blockquote>
+
+<p>A sequence is an ordered list of terms.</p>
+
+<blockquote>
+  <p>2,   4,   6,   8,   …<br />
+1st, 2nd, 3rd, 4th, …<br />
+1<em>2, 2</em>2, 3<em>2, 4</em>2, …</p>
+</blockquote>
+
+<p>A general (or explicit) formula for the nth term.</p>
+
+<p>a<sub>n</sub> = 2n</p>
+
+<h2 id="notation">Notation</h2>
+
+<blockquote>
+  <p>I want to write the shorthand version of: 1/2 + 2/3 + 3/4 + 4/5 + …
+see note sheet #9q34</p>
+</blockquote>
+
+<h1 id="principle-of-mathematical-induction">Principle of Mathematical Induction</h1>
+
+<p>To proove statements of the form:
+    “For all integers n &gt;= 1, P(n).”</p>
+
+<blockquote>
+  <p>If   1)  P(1) is true<br />
+and  2)  the statement<br />
+            “for all integers k &gt;= 1, P(k) =&gt; P(k+1)”<br />
+          is true</p>
+</blockquote>
+
+<p>The metaphore for this is a ladder. If I can get the next rung,
+then I can get the the rung after that one.</p>
+
+<p>To use the principle of Mathematical Induction</p>
+<ol>
+  <li>Proove the statement is true for n=1 (base step or base case).</li>
+  <li>Let k &gt;= 1 be some arbitrary integer.</li>
+  <li>Assume P(k). This is called the inductive hypothesis.</li>
+  <li>Proove P(k+1). This is called the inductive step.</li>
+  <li>Therefor, P(n) for all n &gt;= 1.</li>
+</ol>
+
+<p>Continued on paper notes: #zrepryt</p>
+
+<h1 id="statement-of-mathematical-induction">Statement of Mathematical Induction</h1>
+
+<p>Let a be some fixed non-negative integer.
+Let P(n) be a statement define d for all integers n &gt;= a.
+If P(a) is true …</p>
+
+<p>Conjecture: Using 3 cent coins and 5 cent coins, any change amount n &gt;= 8 can be made.</p>
+
+<p>8 = 3 + 5
+9 = 3 + 3 + 3
+10 = 5 + 5
+11 = 3 + 3 + 5
+12 = 3 + 3 + 3</p>
+
+<p>Case 1 = no 5 cent coins
+Case 2 = at least oe 5 cent coin</p>
+
+<p>Result: For all change amounts n &gt;= 8, you can make n cents using only 3 cent coins and 5 cent coins.</p>
+
+<p><strong>Proof by induction</strong>:
+Observe that 8 = 3 + 5, prooving the base case.
+Let k &gt;= 8 be any arbitrary integer.
+Assume that k cents can be made by using only 3 cent and 5 cent coins.
+We claim that (k + 1) cents can be made using only 3 cent coins and at least one 5 cent coin.
+Case 1: at lest one 5 cent coin is used to make k cents.
+    Trade one 5 cent coin for each 3 cent coins.
+    The total would then be k - 5 + 2 * 3 = k + 1 cents.
+Case 2:
+    no 5 cent coins are used in making k cent coins.
+    Since k &gt;= 8 and only 3 cent coins are used, we have <em>at least three</em> 3 cent coins.
+    Trade three 3 cent coins or two 5 cent coins.
+    The total would then be k - 3 * 3 + 2 * 5 = k + 1.
+    Therefore, by the Principle of Mathematical Induction, any amount n &gt;= 8 can be made.</p>
+
+<hr />
+
+<p><strong>Proof by Mathematical Induction using Factorials</strong>
+1 * 1! + 2 * 2! + 3 * 3! .. + n * n! = (n + 1)! = 1 for all n &gt;= 1.
+Proof: Observe that when n = 1, 1 * 1! = 1 == 2! - 1 = (1 + 1)! - 1 prooving the base case.
+Let k &gt;= 1 be any arbitrary integer.
+Assume 1 * 1! + 2 * 2! + 3 * 3! .. + k * k! = (k + 1)! - 1.
+We want to show that 1 * 1! + 2 * 2! + 3 * 3! .. + k * k! = (k + 1) * (k + 1)! = (k + 2)! - 1
+1 * 1! + 2 * 2! + 3 * 3! .. + k * k! = (k + 1) * (k + 1)! = (k + 1)! - 1 + (k + 1) * (k + 1)!
+                                                          = (k + 1)! * (1 + k + 1) - 1
+                                                          = (k + 1)! * (k + 2) - 1
+                                                          = (k + 2)! - 1
+By the P.M.I., E<sup>n</sup><sub>i=1</sub> i * i = (n + 1)! - 1 for all n &gt;= 1.
+<em>The statement above should be formatted in the inductive notation format which wont work in markdown.</em></p>
+
+<hr />
+
+<p>Prove that n &lt; 2<sup>n</sup> for all n &gt;= 1.
+Proof: Observe that 1 &lt; 2<sup>1</sup>, prooving the base case.
+Let k &gt;= 1 be any arbitrary integer.
+Assume k &lt; 2<sup>k&lt;/sub&gt;.
+We want to show that k + 1 &lt; 2<sup>k+1</sup>
+Observe that 2<sup>k+1</sup> = 2<sup>k</sup> * 2 &gt; k * 2 = 2k = k + k &gt;= k + 1
+By the P.M.I., n &lt; 2<sup>n</sup> for all n &gt;= 1.</sup></p>
+
+<hr />
+
+<p>Prove that n! is &gt; 2<sup>n</sup> for all n &gt;= 4.
+Proof: Notice that 4 ! = 24 &gt; 16 = 2<sup>4</sup>.
+Let k &gt;= 4 be any arbitrary integer.
+Assume k! &gt; 2<sup>k</sup>.
+We want to show (k + 1)! &gt; 2<sup>k+1</sup>
+Observe (k + 1)! = (k + 1) * k! &gt; (k + 1) * 2<sup>k</sup> &gt;= 5 * 2 &gt; 2 * 2<sup>k</sup> = 2<sup>k+1</sup>.
+By P.M.I. n! &gt; 2<sup>n</sup> for all n &gt;= 4.</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/discrete-math/divisibility/">
+                    <h1>Divisibility Tests</h1>
+                </a>
+                <hr/>
+
+                <h2 id="a-number-is">A number is…</h2>
+
+<h2 id="divisible-by-2-if-and-only-if-its-ones-digit-is-even-ie-0-2-4-6-8">divisible by 2 if and only if it’s ones digit is even (i.e. 0, 2, 4, 6, 8).</h2>
+<blockquote>
+  <p>For instance, 8 is even because 8 / 4 = 2. In other words, its even because its evenly divisible by something.</p>
+</blockquote>
+
+<h2 id="divisible-by-5-if-and-only-if-its-ones-digit-it-0-or-5">divisible by 5 if and only if its ones digit it 0 or 5.</h2>
+
+<blockquote>
+  <p>2 and 5 are the easiest to test because we are working with a base 10 system.<br />
+2 and 5 are divisors of 10.<br />
+Whatever system your in, the divisors of that system will be the easiest to work with.</p>
+</blockquote>
+
+<h2 id="divisible-by-10-if-and-only-if-its-ones-digit-is-0">divisible by 10 if and only if its ones digit is 0.</h2>
+
+<blockquote>
+  <p>In an expression a + b + c, if a and b are multiples of 5, then in order for the
+result to be a multiple of 5, c must also be divisible by 5.<br />
+For example, 10 + 15 + 20 can be written as 5 * 2 + 5 * 3 + 5 * 4 = 5(2 + 3 + 4)<br />
+Another example, a number 473 = 4 * 100 + 7 * 10 + 3</p>
+</blockquote>
+
+<h2 id="divisible-by-3-if-and-only-if-the-sum-of-its-digits-is-divisible-by-3">divisible by 3 if and only if the sum of its digits is divisible by 3.</h2>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>Example 1: 3</td>
+        <td>3120 since</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3 + 1 + 3 + 0</td>
+      </tr>
+      <tr>
+        <td>The symbol “</td>
+        <td>” means “divides into”</td>
+      </tr>
+      <tr>
+        <td>Example 2: 713 is not divisible by 3 since 7 + 1 + 3 = 11 and 3 does not</td>
+        <td>11.</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<h2 id="divisible-by-9-if-and-only-if-the-sum-of-its-digits-is-divisible-by-9">divisible by 9 if and only if the sum of its digits is divisible by 9.</h2>
+
+<blockquote>
+  <p>Example: 347 = 3(100) + 4(10) + 7
+               = 3(99 + 1) + 4(9 + 1) + 7
+               = 3 * 99 + 4 * 9 + (3 + 4 + 7)
+Notice the 99 and the 9</p>
+</blockquote>
+
+<h2 id="divisible-by-6-if-and-only-if-and-only-if-it-is-divisible-by-both-2-and-3">divisible by 6 if and only if and only if it is divisible by both 2 and 3.</h2>
+
+<blockquote>
+  <p>Breaking 24 into it’s prime number factorizations:
+24 = 2 * 3 * 2 * 2
+24/6 = 2 * 3
+n/6 = P1 * P2 * P3… / 2 * 3
+Example: n = 3120
+Since 2 | n and 3 | n then we know 6 | n</p>
+</blockquote>
+
+<p><strong>For the following number determine all possible ways to fill in the missing</strong>
+<strong>ones digit so that the number is divisible by 6.</strong></p>
+
+<blockquote>
+  <p>4,32_<br />
+The ones digit must be either 0, 2, 4, 6 or 8.<br />
+3 | 4320? Yes, 4 + 3 + 2 == 9 and 3 | 9<br />
+3 | 4 + 3 + 2 and 3 does not go into 4 + 3 + 2 + 2<br />
+…</p>
+</blockquote>
+
+<h2 id="divisible-by-4-if-and-only-if-the-number-represented-by-its-lats-two-digits-is-divisible-by-4">divisible by 4 if and only if the number represented by its lats two digits is divisible by 4.</h2>
+
+<blockquote>
+  <p>Ex 1: 1784 = (1 * 1000) + (7 * 100) + (8 * 10) + 4<br />
+Ex 2: Does 4 divide 342?<br />
+No, because 4 does not divide 42.</p>
+</blockquote>
+
+<h2 id="divisible-by-8-if-and-only-if-the-number-represented-by-its-last-3-digits-is-divisible-by-8">divisible by 8 if and only if the number represented by its last 3 digits is divisible by 8.</h2>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>Ex: 8</td>
+        <td>3120 since 8</td>
+        <td>120, i.e. 120 = 8 * 15.</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<blockquote>
+  <p>Interesting therem:<br />
+For 2^1 check the last digit<br />
+For 2 squared check the the last two<br />
+For 2 cubed chek the last three</p>
+</blockquote>
+
+<h2 id="divisible-by-11-if-and-only-if-the-alternating-sum-of-its-digits-is-divisible-by-11">divisible by 11 if and only if the alternating sum of its digits is divisible by 11.</h2>
+
+<ul>
+  <li>(Altername means alternate signs between + and -)</li>
+</ul>
+
+<blockquote>
+  <p>Ex: Let n = 6314<br />
+6 - 3 + 1 - 4 = 0<br />
+So, since 11 | 0 it must be that 11 | 6314<br />
+Ex: Let n = 3120<br />
+3 - 1 + 2 - 0 = 4<br />
+Since 11 does not | 4, then 11 does not | 3120.<br />
+What if we computed - 3 + 1 - 2 + 0 = -4?<br />
+So since 11 does not | -4 (and in general, if 11 does not | a then 11 | -a)<br />
+then the divisibility rule is <strong>unaffected</strong>.</p>
+</blockquote>
+
+<h2 id="divisible-by-7-if-and-only-if">divisible by 7 if and only if</h2>
+
+<ul>
+  <li>Use the following iterative process:</li>
+  <li>Step 1: Take the last digit and remove it from the rest of the number.</li>
+  <li>Last digit: d = n % 10, remove last digit: n = n/10</li>
+  <li>Step 2: Subtract twice the last digit from the number formed by the remaining digits</li>
+  <li>n = n - 2 * d</li>
+  <li>Repeat steps one and two as needed.</li>
+  <li>The origional number n is divisible by 7 if and only if the number obtained by this iterative process is divisible by 7.</li>
+</ul>
+
+<blockquote>
+  <p>Ex: n = 392<br />
+Step 1: d = 2, n = 39<br />
+Step 2: n - 2d = 39 - 4 = 35<br />
+True since 7 | 35, then 7 | 392</p>
+</blockquote>
+
+<blockquote>
+  <p>Ex: n = 1384<br />
+Step 1: d = 4, n = 138<br />
+Step 2: 138 - 2d = 130<br />
+Repeat:<br />
+Step 1: d = 0, n = 13<br />
+Step 2: 13 - 2(0) = 13<br />
+Since 7 does not | 13, then 7 does not divide 1384.</p>
+</blockquote>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/discrete-math/infinity/">
+                    <h1>Infinity</h1>
+                </a>
+                <hr/>
+
+                <h2 id="countably-infinite">Countably infinite</h2>
+
+<ul>
+  <li>A set A is countably infinite if there is a one-to-one correspondence from ℕ = {1, 2, 3, …} to A.</li>
+  <li>Countably infinite is like “listing”.</li>
+  <li>The set of positive even integers is countably infinite.</li>
+</ul>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/discrete-math/logic-and-statements/">
+                    <h1>Logic and Statements</h1>
+                </a>
+                <hr/>
+
+                <p>Statement - A mathematical phrase that is true or false</p>
+
+<p>Examples:</p>
+<ul>
+  <li>P: Today is Monday. –&gt; false</li>
+  <li>Q: The integer 5 is even. –&gt; false</li>
+  <li>R: The integer 0 is even. –&gt; true</li>
+</ul>
+
+<hr />
+<p><strong>Unrelated:</strong> This shows how it is possible to proove that 0 is even.
+n is even if and only if n = 2k for some integer k.
+0 = 2 * 0
+***</p>
+
+<p>The following examples of P, Q and R display their meaning in plain terms.</p>
+<ul>
+  <li>P v Q is true –&gt; “At least one of these is true.”</li>
+  <li>Q ^ R is true –&gt; “Both of these are true.”</li>
+  <li>P ⊕ R is true –&gt; “One of these is true but not both.”</li>
+</ul>
+
+<h1 id="laws">Laws</h1>
+
+<blockquote>
+  <p>Demorgan’s law:<br />
+~(PvQ) ≡ ~P ^ ~Q<br />
+~(P^Q) ≡ ~P v ~Q</p>
+</blockquote>
+
+<p>Examples:</p>
+
+<blockquote>
+  <p>~(1 ≤ n &lt; 3)<br />
+&lt;=========○—–●=========&gt;<br />
+          1      3<br />
+Also: n &lt; 1 OR n ≥ 3</p>
+</blockquote>
+
+<blockquote>
+  <p>1 ≤ n &lt; 3<br />
+&lt;———●=====○———&gt;<br />
+          1      3</p>
+</blockquote>
+
+<blockquote>
+  <p>1.) Negate the following statements.<br />
+The earth has two moons or 3 + 5 &lt; 2<br />
+The earth does not have two moons and 3 + 5 ≥ 2</p>
+</blockquote>
+
+<blockquote>
+  <p>2.) Negate the following statements.<br />
+A stack overflow has occured and the sector size is not supported.<br />
+A stack overflow has not occured and the sector size is supported.</p>
+</blockquote>
+
+<blockquote>
+  <p>3.) Negate the following statements.<br />
+x is positive or y is negative.<br />
+x is not positive or y is not negative.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="conditional-statements-implications">Conditional Statements (Implications)</h1>
+
+<blockquote>
+  <p>P –&gt; The hypothesis<br />
+Q –&gt; The conclusion</p>
+</blockquote>
+
+<blockquote>
+  <p>If P then Q</p>
+</blockquote>
+
+<blockquote>
+  <p>If n is even, then n<sup>2</sup> is even<br />
+Hypothesis: n is even<br />
+Conclusion: n<sup>2</sup> is even</p>
+</blockquote>
+
+<p>There is many ways in which implications can be worded. Some examples are:</p>
+<blockquote>
+  <p>P =&gt; Q<br />
+If P, then Q<br />
+P implies Q<br />
+P only if Q<br />
+Q if P<br />
+P is sufficient for Q<br />
+Q is necessary for P</p>
+</blockquote>
+
+<h2 id="negating-an-if-then-statement-negating-an-implication">Negating an if then statement (negating an implication)</h2>
+
+<blockquote>
+  <p>~(P =&gt; Q) ≡ ~(~P v Q)<br />
+~(~P v Q) ≡ p ^ ~Q</p>
+</blockquote>
+
+<p>Examples:</p>
+
+<blockquote>
+  <p>Negate the following.<br />
+If x &gt; y, then x<sup>2</sup> &gt; y<sup>2</sup><br />
+x &gt; y and x<sup>2</sup> ≤ y<sup>2</sup><br />
+<strong>Note:</strong> Do not write the <em>If</em> in the negation.</p>
+</blockquote>
+
+<blockquote>
+  <p>Negate the following.<br />
+If rs = 0, then r = 0 or s = 0<br />
+rs = 0 and r != 0 and s != 0<br />
+<strong>Notice:</strong> The negation results in the form <em>P ^ ~Q</em>.</p>
+</blockquote>
+
+<h2 id="contrapositive-and-converse-statements">Contrapositive and converse statements</h2>
+
+<blockquote>
+  <p>If P, then Q.<br />
+Contrapositive: If ~Q, then ~P.<br />
+Converse: If Q, then P.</p>
+</blockquote>
+
+<blockquote>
+  <p>If T is equalateral, then T is isosceles.<br />
+<strong>Note:</strong> isosceles defines a triangle in which two sides are congruent.<br />
+Contrapositive: If T is not isoscelesm then T is not equalateral.<br />
+Converse: If T is isosceles, then T is equalateral.<br />
+<strong>Note:</strong> The contrapositive of this statement is true while the converse of this statement is false.<br />
+The contrapositive will always be logically equivilant to the origional statement.</p>
+</blockquote>
+
+<h2 id="biconditional-statements">Biconditional statements</h2>
+
+<blockquote>
+  <p>P &lt;=&gt; Q<br />
+“P if and only if Q”<br />
+“If p, then Q and if Q then P”</p>
+</blockquote>
+
+<p>Examples:</p>
+
+<blockquote>
+  <p>If ab is even, then a is even and b is even.<br />
+False, 2 * 3 = 6, 6 is even but 2 is even and 3 is not even.</p>
+</blockquote>
+
+<blockquote>
+  <p>If ab is even then, a is even or b is even.<br />
+True<br />
+Converse: If a is even or b is even, then ab is even.<br />
+True<br />
+Biconditional: ab is even <em>if and only if</em> a is even or b is even.<br />
+<strong>Note:</strong> The statement and the converse are not always both true, but when they are it means the biconditional is true.</p>
+</blockquote>
+
+<h2 id="set-notation">Set notation</h2>
+
+<ul>
+  <li>ℕ is the set of natural numbers.</li>
+  <li>Mathemeticians and computer scientists define the set of natural numbers diferently.</li>
+  <li>Mathemeticians: ℕ = {1, 2, 3, …}</li>
+  <li>
+    <p>Computer scientists: ℕ = {0, 1, 2, …}</p>
+  </li>
+  <li>ℤ is the set of integers.</li>
+  <li>
+    <p>ℤ = {…, -3, -2, -1, 0, 1, 2, 3, …}</p>
+  </li>
+  <li>ℝ is the set of real numbers.</li>
+  <li>
+    <p>ℝ = {1, 12.38, -0.8625, 3/4, √2, 198}</p>
+  </li>
+  <li>ℚ is the set of rational numbers.</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>ℚ = { a/b</td>
+          <td>a, b ∈ ℤ, b != 0}</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>3/7 ∈ ℚ</li>
+  <li>-4000/201 ∈ ℚ</li>
+  <li>4 = 4/1 ∈ ℚ</li>
+  <li>π ∉ ℚ</li>
+</ul>
+
+<p><strong>Note:</strong> The symbol ‘∈’ is pronounced <em>is a subset of</em>.</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/discrete-math/math-review/">
+                    <h1>Discrete math review notes</h1>
+                </a>
+                <hr/>
+
+                <p>﻿* Definition of a prime: An integer n&gt;1 is prime if it is only divisible by one and itself.</p>
+<ul>
+  <li>A number is rational if it can be written as ab where a and b are integers and b≠0.</li>
+  <li>Direct - If P then Q</li>
+  <li>Negation - P and Q̸</li>
+  <li>Converse - If Q then P</li>
+  <li>Contrapositive - If Q̸ then P̸
+divisible by 10 if and only if its ones digit is 0.
+In an expression a + b + c, if a and b are multiples of 5, then in order for the 
+result to be a multiple of 5, c must also be divisible by 5. 
+For example, 10 + 15 + 20 can be written as 5 * 2 + 5 * 3 + 5 * 4 = 5(2 + 3 + 4) 
+Another example, a number 473 = 4 * 100 + 7 * 10 + 3</li>
+</ul>
+
+<p>divisible by 3 if and only if the sum of its digits is divisible by 3.
+Example 1: 3 | 3120 since 
+3 | 3 + 1 + 3 + 0 
+The symbol “|” means “divides into” 
+Example 2: 713 is not divisible by 3 since 7 + 1 + 3 = 11 and 3 does not | 11.</p>
+
+<p>divisible by 9 if and only if the sum of its digits is divisible by 9.
+Example: 347 = 3(100) + 4(10) + 7 
+= 3(99 + 1) + 4(9 + 1) + 7 
+= 3 * 99 + 4 * 9 + (3 + 4 + 7) 
+Notice the 99 and the 9</p>
+
+<p>divisible by 6 if and only if and only if it is divisible by both 2 and 3.
+Breaking 24 into it’s prime number factorizations: 
+24 = 2 * 3 * 2 * 2 
+24/6 = 2 * 3 
+n/6 = P1 * P2 * P3… / 2 * 3 
+Example: n = 3120 
+Since 2 | n and 3 | n then we know 6 | n
+For the following number determine all possible ways to fill in the missing 
+ones digit so that the number is divisible by 6.
+4,32_ 
+The ones digit must be either 0, 2, 4, 6 or 8. 
+3 | 4320? Yes, 4 + 3 + 2 == 9 and 3 | 9 
+3 | 4 + 3 + 2 and 3 does not go into 4 + 3 + 2 + 2</p>
+
+<p>divisible by 4 if and only if the number represented by its last two digits is divisible by 4.
+Ex 1: 1784 = (1 * 1000) + (7 * 100) + (8 * 10) + 4 
+Ex 2: Does 4 divide 342? 
+No, because 4 does not divide 42.
+	divisible by 2 if and only if it’s ones digit is even (i.e. 0, 2, 4, 6, 8).
+For instance, 8 is even because 8 / 4 = 2. In other words, its even because its evenly divisible by something.
+divisible by 5 if and only if its ones digit it 0 or 5.
+2 and 5 are the easiest to test because we are working with a base 10 system. 
+2 and 5 are divisors of 10. 
+Whatever system your in, the divisors of that system will be the easiest to work with.</p>
+
+<p>divisible by 8 if and only if the number represented by its last 3 digits is divisible by 8.
+Ex: 8 | 3120 since 8 | 120, i.e. 120 = 8 * 15.
+Interesting therem: 
+For 2^1 check the last digit 
+For 2 squared check the the last two 
+For 2 cubed chek the last three</p>
+
+<p>divisible by 11 if and only if the alternating sum of its digits is divisible by 11.</p>
+<ul>
+  <li>(Altername means alternate signs between + and -)
+Ex: Let n = 6314 
+6 - 3 + 1 - 4 = 0 
+So, since 11 | 0 it must be that 11 | 6314 
+Ex: Let n = 3120 
+3 - 1 + 2 - 0 = 4 
+Since 11 does not | 4, then 11 does not | 3120. 
+What if we computed - 3 + 1 - 2 + 0 = -4? 
+So since 11 does not | -4 (and in general, if 11 does not | a then 11 | -a) 
+then the divisibility rule is unaffected.</li>
+</ul>
+
+<p>divisible by 7 if and only if</p>
+<ul>
+  <li>Use the following iterative process:</li>
+  <li>Step 1: Take the last digit and remove it from the rest of the number.</li>
+  <li>Last digit: d = n % 10, remove last digit: n = n/10</li>
+  <li>Step 2: Subtract twice the last digit from the number formed by the remaining digits</li>
+  <li>n = n - 2 * d</li>
+  <li>Repeat steps one and two as needed.</li>
+  <li>The original number n is divisible by 7 if and only if the number obtained by this iterative process is divisible by 7.
+Ex: n = 392 
+Step 1: d = 2, n = 39 
+Step 2: n - 2d = 39 - 4 = 35 
+True since 7 | 35, then 7 | 392
+Ex: n = 1384 
+Step 1: d = 4, n = 138 
+Step 2: 138 - 2d = 130 
+Repeat: 
+Step 1: d = 0, n = 13 
+Step 2: 13 - 2(0) = 13 
+Since 7 does not | 13, then 7 does not divide 1384.</li>
+</ul>
+
+<p>Primes 2, 3, 5, 7, 11, 13, 17…
+Definition of a composite 1. An integer n &gt; 1 is composite if it is not prime. 2. An integer n is composite if there exist integers a and b with 1 &lt; a &lt; n and 1 &lt; b &lt; n such that n = ab. 3. There exist positive integers r and s such that n = rs and r != 1 and s != 1.
+Proof (contrapositive):</p>
+<ol>
+  <li>Assume n is even.</li>
+  <li>Then n=2k for some integer k</li>
+  <li>So n2=(2k)2=4k2=2(2k2).</li>
+  <li>Since 2k2 is an integer, n2 is even.
+ Proof (contradiction):</li>
+  <li>Assume n2 is odd.</li>
+  <li>Suppose, to the contrary, that n is even.</li>
+  <li>Then n=2k for some integer k.</li>
+  <li>So n2−(2k)2=4k2−2(2k2).</li>
+  <li>Since 2k2 is an integer, n2 is even, contradicting that n2 is odd.</li>
+  <li>Therefore, n is odd.
+ For any two integers m and n, 3m+5n is even if and only if m and n are of the same parity.
+    <ul>
+      <li>NOTE: (Two integers m and n have the same parity if they are either both even or both odd.)
+If 3m+5n is even, then m and n are of the same parity.
+Proof (contrapositive): If m and n are of opposite parity, then 3m+5n is odd.
+Case 1: m is even and n is odd.
+Case 2: m is odd and n is even.
+if m and n are of the same parity, then 3m+5n is even.
+Proof (direct):
+Case 1: m and n are both even.
+Case 2: m and n are both odd.
+ For any sets A, B, and C, (A−B)∪(A−C)=A−(B∩C).</li>
+    </ul>
+  </li>
+  <li>Let A, B, and C be sets.
+First we show that (A−B)∪(A−C)⊆A−(B∩C)</li>
+  <li>Let x∈(A−B)∪(A−C).</li>
+  <li>So x∈A−B or x∈A−C.
+Case 1: x∈A−B</li>
+  <li>Then x∈A and x∉B.</li>
+  <li>So x∈A and since x∉B, we know x∉B∩C.</li>
+  <li>So x∈A−(B∩C).
+Case 2: x∈A−C</li>
+  <li>Then x∈A and x∉C.</li>
+  <li>So x∈A and since x∉C, we know x∉B∩C.</li>
+  <li>So x∈A−(B∩C).</li>
+  <li>Thus x∈A−(B∩C), implying (A−B)∪(A−C)⊆A−(B∩C).
+Next we show A−(B C)⊆(A−B)∪(A−C).</li>
+  <li>Let x∈A−(B∩C).</li>
+  <li>Then x∈A and x∉B∩C.</li>
+  <li>So x∈!(B∩C), which implies x∈!B∪!C.</li>
+  <li>So x∉B or x∉C.
+Case 1: x∉B</li>
+  <li>Since x∈X and x∉B, we know x∈A−B.</li>
+  <li>Therefore x∈(A−B)∪(A−C).
+Case 2: x∉C</li>
+  <li>Since x∈A and x∉C, we know x∈A−C.</li>
+  <li>Therefore x∈(A−B)∪(A−C)
+ For all integers a, b, and c, if a|c and b|c, then ab|c. = False.
+Let a=2, b=4, and c=12.</li>
+  <li>Then 2|12 and 4|12, but 2∗4=8/|12.
+ For all integers a, b, c, and d, if a|b and c|d, then ac|bd. = True.
+bd=ax∗cy=ac∗xy</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Assume a</td>
+          <td>b and c</td>
+          <td>d.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Then b=ax and c=dy for some integers x and y.</li>
+  <li>So bd=ax∗cy=ac(xy)</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Since xy is an integer, ac</td>
+          <td>bd.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<p>Proof by Mathematical Induction using Factorials 
+1 * 1! + 2 * 2! + 3 * 3! .. + n * n! = (n + 1)! = 1 for all n &gt;= 1. 
+Proof: Observe that when n = 1, 1 * 1! = 1 == 2! - 1 = (1 + 1)! - 1 proving the base case. 
+Let k &gt;= 1 be any arbitrary integer. 
+Assume 1 * 1! + 2 * 2! + 3 * 3! .. + k * k! = (k + 1)! - 1. 
+We want to show that 1 * 1! + 2 * 2! + 3 * 3! .. + k * k! = (k + 1) * (k + 1)! = (k + 2)! - 1 
+1 * 1! + 2 * 2! + 3 * 3! .. + k * k! = (k + 1) * (k + 1)! = (k + 1)! - 1 + (k + 1) * (k + 1)! 
+= (k + 1)! * (1 + k + 1) - 1 
+= (k + 1)! * (k + 2) - 1 
+= (k + 2)! - 1 
+By the P.M.I., Eni=1 i * i = (n + 1)! - 1 for all n &gt;= 1.</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/economics/stocks/">
+                    <h1>Stocks Notes</h1>
+                </a>
+                <hr/>
+
+                <h2 id="common-stock">Common Stock</h2>
+
+<ul>
+  <li>Securities - all of the investments, stocks, bonds, mutual funds, options, and commodities that are bought and sold on the stock market.</li>
+  <li>Private corporation - a company that issues stock to a small group of people.</li>
+  <li>Public corporation - a company that sells its shares openly in stock markets.
+Prefered Stock</li>
+  <li>par value - an assigned dollar value that is printed on a stock certificate.</li>
+  <li>Cumulative preferred stock - a stock whose unpaid dividends build up and must be paid before any cash dividend is paid to the common stockholders.</li>
+  <li>Convertible preferred stock - a stock that can be exchanged for a specific number of shares of common stock.</li>
+  <li>Participation Feature - allows preferred stock holders to share in the corporation’s earnings with the common stockholders.</li>
+</ul>
+
+<h2 id="types-of-stock-investments">Types of Stock Investments</h2>
+
+<ul>
+  <li>Blue-chip stock - a stock that is issued by the strongest and most respected companies, that have a history of stable earnings.</li>
+  <li>Income stock - pays higher-than-average dividends compared to other issues. Buyers are attracted this kind of stock because the dividends are predictable.</li>
+  <li>Growth stock - issued by a corporation that has higher that average predicted earnings.</li>
+  <li>Cyclical stock - has a market value that tends to reflect the state of the economy.</li>
+  <li>Defensive stock - a stock that remains stable during declines in the economy.</li>
+  <li>Large-cap-stock - a stock from a corporation that has issued a large number of shares of stock and has had large amounts of capitalization.</li>
+  <li>Small-cap-stock - a stock issued by a company with a capitalization of $500 million or less.</li>
+  <li>Penny stock - typically sells for less than $1 per share, although it can sell for as much as $10 per share.</li>
+</ul>
+
+<h2 id="factors-that-influence-the-price-of-stock">Factors that influence the price of stock</h2>
+
+<ul>
+  <li>bull market - a market that occurs when investors are optimistic about the economy and buy bulky stocks.</li>
+  <li>bear market - a market condition where investors are optimistic about the economy and sell stocks.</li>
+  <li>Current yield - the annual calculation that includes the annual dividend by the current market value.</li>
+  <li>Total return - a calculation that includes the annual dividend as well as any increase or decrease in the original purchase price of the investment.</li>
+</ul>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/electronics/capacitor-types/">
+                    <h1>Capacitor types and colors</h1>
+                </a>
+                <hr/>
+
+                <TABLE class="table">
+	<TR>
+		<TD>1pf - 1800pf</TD>
+		<TD>Yellow Ceramic Disk or Blue or Yellow Monolithics</TD>
+	</TR>
+	<TR>
+		<TD>.001; .01; .022; .047; 0.1; 0.47; 1uF (C96 on K2)</TD>
+		<TD>Red Monolithics</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 class="text-center">
+			Temperature stable caps are marked "NP0", "C0G" or have a black top.
+		</TD>
+	</TR>
+</TABLE>
+
+<H2>Capacitor Marking Table (Ceramic and Monolithic Cap's)</H2>
+
+<p class="lead text-danger">
+    <strong>Important:</strong> Capacitors with values below 100 pf may be
+    marked two ways: Either with just two digits (22 pF = "22") or three
+    digits (22 pF = "220",). In the latter case the third digit signifies
+    the number of zeros following the first two digits. "220" = 22 pF,
+    "221" = 220 pF, "222" = 2200 pF.
+</p>
+
+<TABLE class="table">
+	<TR>
+		<TD>VALUE</TD>
+		<TD>MARKING</TD>
+		<TD></TD>
+		<TD>VALUE</TD>
+		<TD>MARKING</TD>
+		<TD></TD>
+		<TD>VALUE</TD>
+		<TD>MARKING</TD>
+	</TR>
+	<TR>
+		<TD>1pf; 3pf; 5pf</TD>
+		<TD>1; 3; 5</TD>
+		<TD></TD>
+		<TD>
+            2.7, 3 or 3.3 pF can be interchanged with each other.
+            <br/>
+            4.7 or 5 pF can be interchanged with each other.
+		</TD>
+	</TR>
+	<TR>
+		<TD>10 pf</TD>
+		<TD>10 or 100</TD>
+		<TD>
+		</TD>
+		<TD>0.001 uF</TD>
+		<TD>102</TD>
+		<TD>
+		</TD>
+		<TD>0.10 uF</TD>
+		<TD>104</TD>
+	</TR>
+	<TR>
+		<TD>12 pf</TD>
+		<TD>12 or 120</TD>
+		<TD></TD>
+		<TD>0.0012uF (1200pf)</TD>
+		<TD>122</TD>
+		<TD></TD>
+		<TD>0.12 uF</TD>
+		<TD>124</TD>
+	</TR>
+	<TR>
+		<TD>15 pf</TD>
+		<TD>15 or 150</TD>
+		<TD></TD>
+		<TD>0.0015uF</TD>
+		<TD>152</TD>
+		<TD></TD>
+		<TD>0.15 uf</TD>
+		<TD>154</TD>
+	</TR>
+	<TR>
+		<TD>18 pf</TD>
+		<TD>18 or 180</TD>
+		<TD></TD>
+		<TD>0.0018 uF
+			(1800pf)</TD>
+		<TD>182</TD>
+		<TD></TD>
+		<TD>0.18 uF</TD>
+		<TD>184</TD>
+	</TR>
+	<TR>
+		<TD>22 pf</TD>
+		<TD>22 or 220</TD>
+		<TD></TD>
+		<TD>0.0022uF</TD>
+		<TD>222</TD>
+		<TD></TD>
+		<TD>0.22 uF</TD>
+		<TD>224</TD>
+	</TR>
+	<TR>
+		<TD>27 pf</TD>
+		<TD>27 or 270</TD>
+		<TD></TD>
+		<TD>0.0027uF</TD>
+		<TD>272</TD>
+		<TD></TD>
+		<TD>0.27 uF</TD>
+		<TD>274</TD>
+	</TR>
+	<TR>
+		<TD>33 pf</TD>
+		<TD>33 or 330</TD>
+		<TD></TD>
+		<TD>0.0033 uF</TD>
+		<TD>332</TD>
+		<TD></TD>
+		<TD>0.33 uF</TD>
+		<TD>334</TD>
+	</TR>
+	<TR>
+		<TD>39 pf</TD>
+		<TD>39 or 390</TD>
+		<TD></TD>
+		<TD>0.0039uF</TD>
+		<TD>392</TD>
+		<TD></TD>
+		<TD>0.39 uF</TD>
+		<TD>394</TD>
+	</TR>
+	<TR>
+		<TD>47 pf</TD>
+		<TD>47 or 470</TD>
+		<TD></TD>
+		<TD>0.0047uF</TD>
+		<TD>472</TD>
+		<TD></TD>
+		<TD>0.47 uF</TD>
+		<TD>474</TD>
+	</TR>
+	<TR>
+		<TD>58 pf</TD>
+		<TD>58 or 580</TD>
+		<TD></TD>
+		<TD>0.0056uF</TD>
+		<TD>562</TD>
+		<TD></TD>
+		<TD>0.56 uF</TD>
+		<TD>564</TD>
+	</TR>
+	<TR>
+		<TD>68 pf</TD>
+		<TD>68 or 680</TD>
+		<TD></TD>
+		<TD>0.0068uF</TD>
+		<TD>682</TD>
+		<TD></TD>
+		<TD>0.68 uF</TD>
+		<TD>684</TD>
+	</TR>
+	<TR>
+		<TD>82 pf</TD>
+		<TD>82 or 820</TD>
+		<TD></TD>
+		<TD>0.0082uF</TD>
+		<TD>822</TD>
+		<TD></TD>
+		<TD>0.82 uF</TD>
+		<TD>824</TD>
+	</TR>
+	<TR>
+		<TD>100 pf</TD>
+		<TD>101</TD>
+		<TD></TD>
+		<TD>0.01 uF</TD>
+		<TD>103</TD>
+		<TD></TD>
+		<TD>1uF</TD>
+		<TD>105 or 1uf</TD>
+	</TR>
+	<TR>
+		<TD>120 pf</TD>
+		<TD>121</TD>
+		<TD></TD>
+		<TD>0.012 uF</TD>
+		<TD>123</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>150 pf</TD>
+		<TD>151</TD>
+		<TD></TD>
+		<TD>0.015 uF</TD>
+		<TD>153</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>180 pf</TD>
+		<TD>181</TD>
+		<TD></TD>
+		<TD>0.018 uF</TD>
+		<TD>183</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>220 pf</TD>
+		<TD>221</TD>
+		<TD></TD>
+		<TD>0.022 uF</TD>
+		<TD>223</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>270 pf</TD>
+		<TD>271</TD>
+		<TD></TD>
+		<TD>0.027 uF</TD>
+		<TD>273</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>330 pf</TD>
+		<TD>331</TD>
+		<TD></TD>
+		<TD>0.033 uF</TD>
+		<TD>333</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>390 pf</TD>
+		<TD>391</TD>
+		<TD></TD>
+		<TD>0.039 uF</TD>
+		<TD>393</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>470 pf</TD>
+		<TD>471</TD>
+		<TD></TD>
+		<TD>0.047 uF</TD>
+		<TD>473</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>560 pf</TD>
+		<TD>561</TD>
+		<TD></TD>
+		<TD>0.056 uF</TD>
+		<TD>563</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>680 pf</TD>
+		<TD>681</TD>
+		<TD></TD>
+		<TD>0.068 uF</TD>
+		<TD>683</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD>820 pf</TD>
+		<TD>821</TD>
+		<TD></TD>
+		<TD>0.082 uF</TD>
+		<TD>823</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+</TABLE>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/electronics/resistors/">
+                    <h1>Resistor Color Code Calculator</h1>
+                </a>
+                <hr/>
+
+                <meta NAME="Description" CONTENT="resistor, resistance, color code, color bands, ohms, electronic, components, calculator, calculate">
+<meta NAME="Keywords" CONTENT="resistor, resistance, color code, color bands, ohms, electronic, components, calculator, calculate">
+<SCRIPT> 
+var one=0;
+var two=0;
+var three=0;
+var four=0;
+var val1=0;
+var val2=0;
+var val3=0;
+var val4=0;
+var res1=0;
+var res2=0;
+var res3=0;
+var res4=0;
+var resout=0;
+var restnce=0;
+</script>
+
+<SCRIPT> 
+function calc(){
+restnce=0;
+resout=0;
+one=(document.dropbox.bandone.options[document.dropbox.bandone.selectedIndex].value)
+two=(document.dropbox.bandtwo.options[document.dropbox.bandtwo.selectedIndex].value)
+three=(document.dropbox.bandthree.options[document.dropbox.bandthree.selectedIndex].value)
+four=(document.dropbox.bandfour.options[document.dropbox.bandfour.selectedIndex].value)
+ 
+val1=((one-100)*3)-2;
+val2=((two-200)*3)+28;
+val3=((three-300)*3)+58;
+val4=((four-400)*3)+88;
+ 
+var mn = new Array 
+(
+101	,	0	,	"BLACK",
+102	,	10	,	"BROWN",
+103	,	20	,	"RED",
+104	,	30	,	"ORANGE",
+105	,	40	,	"YELLOW",
+106	,	50	,	"GREEN",
+107	,	60	,	"BLUE",
+108	,	70	,	"VIOLET",
+109	,	80	,	"GRAY",
+110	,	90	,	"WHITE",
+ 
+201	,	0	,	"BLACK",
+202	,	1	,	"BROWN",
+203	,	2	,	"RED",
+204	,	3	,	"ORANGE",
+205	,	4	,	"YELLOW",
+206	,	5	,	"GREEN",
+207	,	6	,	"BLUE",
+208	,	7	,	"VIOLET",
+209	,	8	,	"GRAY",
+210	,	9	,	"WHITE",
+ 
+301	,	1	,	"BLACK",
+302	,	10	,	"BROWN",
+303	,	100	,	"RED",
+304	,	1000	,	"ORANGE",
+305	,	10000	,	"YELLOW",
+306	,	100000	,	"GREEN",
+307	,	1000000	,	"BLUE",
+308	,	10000000	,"VIOLET",
+309	,	.1	,	"GOLD",
+310	,	.01	,	"SILVER",
+ 
+401	,	20	,	"NONE",
+402	,	10	,	"SILVER",
+403	,	5	,	"GOLD"
+);
+res1=mn[val1];res2=mn[val2];res3=mn[val3];res4=mn[val4];
+restnce=(res1+res2)*res3;
+resout=restnce;
+if(restnce>1000){resout=(restnce/1000) + " K"}
+if(restnce>1000000){resout=(restnce/1000000) + " MEG"}
+document.outbox.z1.value=" "+(resout)+ " ohms    and   " +(res4)+" % tolerance";
+}
+</script>
+
+<h2>Fixed Resistors</h2>
+
+<P>A
+fixed resistor supplies a predetermined resistance to a circuit. The
+standard unit value of a resistor is the ohm (represented by the
+symbol &Omega;) usually with the
+prefix ''K'' or ''M''; ''K'' meaning thousand and ''M'' meaning
+million. The higher the ohm value, the more resistance the component
+provides to the circuit. The value on most fixed resistors is
+identified by color coding. The color coding starts near the edge of
+the resistor and comprises four, five, and sometimes six band colors.
+</P>
+
+<P><B>The formula for determining the resistance from the bands is:</B></P>
+<P>Resistance
+= ((first band color value &times;
+10) + (second band color)) &times; 10<SUP>third
+band color value</SUP> ohms</P>
+
+<TABLE class="table">
+	<TR>
+		<TH>
+			<P>Color</P>
+		</TH>
+		<TH>
+			<P>First band (A)</P>
+		</TH>
+		<TH>
+			<P>Second band (B)</P>
+		</TH>
+		<TH>
+			<P>Third band (C)</P>
+		</TH>
+		<TH>
+			<P>Fourth band (D)</P>
+		</TH>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #000000">Black</P>
+		</TD>
+		<TD>
+			<P>0</P>
+		</TD>
+		<TD SDVAL="0" SDNUM="1033;">
+			<P>0</P>
+		</TD>
+		<TD SDVAL="1" SDNUM="1033;">
+			<P>1</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #804c19">Brown</P>
+		</TD>
+		<TD SDVAL="1" SDNUM="1033;">
+			<P>1</P>
+		</TD>
+		<TD SDVAL="1" SDNUM="1033;">
+			<P>1</P>
+		</TD>
+		<TD SDVAL="10" SDNUM="1033;">
+			<P>10</P>
+		</TD>
+		<TD SDVAL="0.01" SDNUM="1033;0;0.00%">
+			<P>1.00%</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #ff0000">Red</P>
+		</TD>
+		<TD SDVAL="2" SDNUM="1033;">
+			<P>2</P>
+		</TD>
+		<TD SDVAL="2" SDNUM="1033;">
+			<P>2</P>
+		</TD>
+		<TD SDVAL="100" SDNUM="1033;">
+			<P>100</P>
+		</TD>
+		<TD SDVAL="0.02" SDNUM="1033;0;0.00%">
+			<P>2.00%</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #ff420e">Orange</P>
+		</TD>
+		<TD SDVAL="3" SDNUM="1033;">
+			<P>3</P>
+		</TD>
+		<TD SDVAL="3" SDNUM="1033;">
+			<P>3</P>
+		</TD>
+		<TD SDVAL="1000" SDNUM="1033;">
+			<P>1000</P>
+		</TD>
+		<TD SDVAL="0.03" SDNUM="1033;0;0.00%">
+			<P>3.00%</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #ffff00">Yellow</P>
+		</TD>
+		<TD SDVAL="4" SDNUM="1033;">
+			<P>4</P>
+		</TD>
+		<TD SDVAL="4" SDNUM="1033;">
+			<P>4</P>
+		</TD>
+		<TD SDVAL="10000" SDNUM="1033;">
+			<P>10000</P>
+		</TD>
+		<TD SDVAL="0.04" SDNUM="1033;0;0.00%">
+			<P>4.00%</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #008000">Green</P>
+		</TD>
+		<TD SDVAL="5" SDNUM="1033;">
+			<P>5</P>
+		</TD>
+		<TD SDVAL="5" SDNUM="1033;">
+			<P>5</P>
+		</TD>
+		<TD SDVAL="100000" SDNUM="1033;">
+			<P>100000</P>
+		</TD>
+		<TD SDVAL="0.005" SDNUM="1033;0;0.00%">
+			<P>0.50%</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #0000ff">Blue</P>
+		</TD>
+		<TD SDVAL="6" SDNUM="1033;">
+			<P>6</P>
+		</TD>
+		<TD SDVAL="6" SDNUM="1033;">
+			<P>6</P>
+		</TD>
+		<TD SDVAL="1000000" SDNUM="1033;">
+			<P>1000000</P>
+		</TD>
+		<TD SDVAL="0.0025" SDNUM="1033;0;0.00%">
+			<P>0.25%</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #9966cc">Violet</P>
+		</TD>
+		<TD SDVAL="7" SDNUM="1033;">
+			<P>7</P>
+		</TD>
+		<TD SDVAL="7" SDNUM="1033;">
+			<P>7</P>
+		</TD>
+		<TD SDVAL="10000000" SDNUM="1033;">
+			<P>10000000</P>
+		</TD>
+		<TD SDVAL="0.001" SDNUM="1033;0;0.00%">
+			<P>0.10%</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #808080">Gray</P>
+		</TD>
+		<TD SDVAL="8" SDNUM="1033;">
+			<P>8</P>
+		</TD>
+		<TD SDVAL="8" SDNUM="1033;">
+			<P>8</P>
+		</TD>
+		<TD SDVAL="100000000" SDNUM="1033;">
+			<P>100000000</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P STYLE="background: #ffffff">White</P>
+		</TD>
+		<TD SDVAL="9" SDNUM="1033;">
+			<P>9</P>
+		</TD>
+		<TD SDVAL="9" SDNUM="1033;">
+			<P>9</P>
+		</TD>
+		<TD SDVAL="1000000000" SDNUM="1033;">
+			<P>1000000000</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P>Gold</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+		<TD SDVAL="0.05" SDNUM="1033;0;0.00%">
+			<P>5.00%</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P>Silver</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+		<TD SDVAL="0.1" SDNUM="1033;0;0.00%">
+			<P>10.00%</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<P>(no color)</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+		<TD>
+			<P><BR>
+			</P>
+		</TD>
+		<TD SDVAL="0.2" SDNUM="1033;0;0.00%">
+			<P>20.00%</P>
+		</TD>
+	</TR>
+</TABLE>
+
+
+<FORM name="dropbox">
+<SELECT name=bandone> 
+<OPTION value=101 selected>*** FIRST ***
+<OPTION value=101>	BLACK
+<OPTION value=102>	BROWN
+<OPTION value=103>	RED
+<OPTION value=104>	ORANGE
+<OPTION value=105>	YELLOW
+<OPTION value=106>	GREEN
+<OPTION value=107>	BLUE
+<OPTION value=108>	VIOLET
+<OPTION value=109>	GRAY
+<OPTION value=110>	WHITE
+ 
+</option></select>
+   
+<SELECT name=bandtwo> 
+<OPTION value=201 selected>*** SECOND ***
+<OPTION value=201>	BLACK
+<OPTION value=202>	BROWN
+<OPTION value=203>	RED
+<OPTION value=204>	ORANGE
+<OPTION value=205>	YELLOW
+<OPTION value=206>	GREEN
+<OPTION value=207>	BLUE
+<OPTION value=208>	VIOLET
+<OPTION value=209>	GRAY
+<OPTION value=210>	WHITE
+ 
+</option></select>
+   
+<SELECT name=bandthree> 
+<OPTION value=301 selected>*** THIRD ***
+<OPTION value=301>	BLACK
+<OPTION value=302>	BROWN
+<OPTION value=303>	RED
+<OPTION value=304>	ORANGE
+<OPTION value=305>	YELLOW
+<OPTION value=306>	GREEN
+<OPTION value=307>	BLUE
+<OPTION value=308>	VIOLET
+<OPTION value=309>	GOLD
+<OPTION value=310>	SILVER
+</option></select>
+ 
+   
+<SELECT name=bandfour> 
+<OPTION value=401 selected>*TOLERANCE *
+<OPTION value=401>	NONE
+<OPTION value=402>	SILVER
+<OPTION value=403>	GOLD
+ 
+</option></select>
+ 
+</form>
+<P>
+
+<FORM>
+<INPUT onclick=calc() type=button value="CALCULATE" name=ENTER>
+</form>
+<P>                  
+<FORM name=outbox> 
+<INPUT type=text size=60 name=z1>
+</form>
+
+<P>
+    Additional information concerning the Axial Lead resistor can be obtained if the
+    first band is a wide band.
+</P>
+
+<P STYLE="margin-bottom: 0in">(Case
+1) if only the first band is wide than the resistor is wire wound.</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0in">(Case
+2) if the first band is wide and there is also a blue fifth band to
+the right of the fourth band than the resistor is wirewound and flame
+proof.</P>
+
+<h2>Variable Resistors</h2>
+
+<P>
+    Variable resistors, also known as
+    potentiometers (pots) let you adjust a resistor to a specific
+    resistance. The actual range of resistance is determined by the
+    upward value of the potentiometer. Potentiometers are thus marked
+    with this upward value, such as 10K, 50K, 100K, 1M, and so forth.
+</P>
+
+<P><B>Example:</B>
+A 50K potentiometer will let you set any resistance any ware from 0
+to 50000 ohms.</P>
+
+<P>
+    Potentiometers are either the dial or slide type.
+    The rotation of the dial type is nearly 360&deg;,
+    depending on the type of potentiometer.
+</p>
+
+<p>
+    Extremely precise potentiometers are referred to as multiturn pots or trimmers.
+    Instead of of turning the dial one complete rotation to change the resistance,
+    a multiturn pot requires that the dial is turned 3, 5, 10, or even 15 times for the
+    span to be the same as a regular potentiometer.
+</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/ethics/ethics/">
+                    <h1>Ethics Notes</h1>
+                </a>
+                <hr/>
+
+                <h2 id="mode-of-application">Mode of application</h2>
+
+<ol>
+  <li>Determine the available alternatives</li>
+  <li>Determine the consequence(s) of each action
+    <ol>
+      <li>Every action you make has a consequence. Ethics dictates that the standard should be that which a reasonably intelligent person would judge the consequences of.</li>
+    </ol>
+  </li>
+  <li>Evaluate the consequences
+    <ol>
+      <li>Some sort of metric must be determined.</li>
+      <li>Which consequence results in greater happiness?</li>
+    </ol>
+  </li>
+  <li>The alternative with the best consequences is the morally right action</li>
+</ol>
+
+<h2 id="deontology">Deontology</h2>
+
+<ul>
+  <li>Based on consideration of individual’s rights, duties, and obligations.</li>
+  <li>individual autonomy - we are self legislating being, we determine the laws that govern our actions.</li>
+</ul>
+
+<p>For each right a person has, there is a corresponding duty. For instance, if someone has a right to life, then someone else has a duty not to take that life.</p>
+
+<p>Perfect duties - You either stole something or you didn’t.
+Imperfect duties - Helping others in need. How much do you have to do to fulfill that duty?</p>
+
+<h2 id="spectrum">Spectrum</h2>
+
+<ul>
+  <li>Laissez Faire Capitalism → (Libertarianism)</li>
+  <li>Welfare State Capitalism</li>
+  <li>Socialism - Socialism infringes upon individual autonomy</li>
+  <li>Marxism / Communism</li>
+</ul>
+
+<p>Equality ←→ Freedom</p>
+
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/history/people/">
+                    <h1>Historical Figure Notes</h1>
+                </a>
+                <hr/>
+
+                <h2 id="benjamin-franklin">Benjamin Franklin</h2>
+
+<ul>
+  <li>1706 Born in Boston, Massachusetts on January 17</li>
+  <li>1718 Begins an apprenticeship in his brother James’ printing shop in Boston</li>
+  <li>1723 Age 17, he leaves his family, running away to Philadelphia, Pennsylvania</li>
+  <li>1724 Moves to London, continuing his training as a printer</li>
+  <li>1732 begins to annually publish, until 1758, Poor Richard: an almanack</li>
+  <li>1737 Appointed postmaster of Philadelphia</li>
+  <li>1747 First writings of electrical experimentation</li>
+  <li>1751 His book “Experiments and Observations on Electricity” is published in london</li>
+  <li>1752 Founds the first American fire insurance company</li>
+  <li>1775 Elected to Continental Congress</li>
+  <li>1776 Signs the Declaration of Independence</li>
+  <li>1778 negotiates and signs Treaty of Alliance with France</li>
+  <li>1782 negotiates, with John Adams and John Jay, the Treaty of Peace with Great Britain</li>
+  <li>1783 While in Paris, watches the Montgolfier brothers become the first men to fly in a balloon</li>
+  <li>1784 negotiates treaties with Prussia and other European</li>
+  <li>1787 elected president of the Pennsylvania Society for promoting the abolition of slavery; serves as delegate to the Constitutional Convention</li>
+  <li>1790 Dies in Philadelphia on April 17</li>
+</ul>
+
+<h2 id="charles-darwin">Charles Darwin</h2>
+
+<blockquote>
+  <p>The affinities of all the beings of the same class have sometimes been represented by a great tree… As buds give rise by growth to fresh buds, and these if vigorous, branch out and overtop on all sides many a feebler branch, so by generation I believe it has been with the great Tree of Life, which fills with its dead and broken branches the crust of the earth, and covers the surface with its ever branching and beautiful ramifications.”
+~ Charles Darwin, 1859</p>
+</blockquote>
+
+<h2 id="charles-messier">Charles Messier</h2>
+
+<p>The Messier objects are celestial 110 objects plotted by comet-hunter Charles Messier in the late 1700s. He wanted to catalogue the various “fuzzy” objects that he observed in the night sky to help avoid confusion with the comets he was trying to discover.</p>
+
+<h2 id="democritus">Democritus</h2>
+
+<p>Democritus was one of the first people to have developed an idea about atoms.</p>
+
+<h2 id="dwight-d-eisenhower">Dwight D. Eisenhower</h2>
+
+<p>Born in Texas and raised in Kansas, Dwight D. Eisenhower was one of America’s greatest military commanders and the thirty-fourth President of the United States. Inspired by the example of a friend who was going to the U.S. Naval Academy, Eisenhower won an appointment to the U.S. Military Academy at West Point. Although his mother had religious convictions that made her a pacifist, she did not try to stop Eisenhower from becoming a military officer.</p>
+
+<h2 id="william-herschel">William Herschel</h2>
+
+<p>William Herschel was an 18th century astronomer who began to catalog deep space objects.</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/physics/matter/">
+                    <h1>Matter</h1>
+                </a>
+                <hr/>
+
+                <p>Matter can be classified into two general groups; mixtures and pure substances.</p>
+
+<h2 id="chemical-changes">Chemical changes</h2>
+
+<p>Chemical changes occur when substances change and a new substance is created. Signs that a chemical change has occurred include a change of temperature. If the substance experiences an increase in thermal energy than an exothermic reaction is taking place, in this type of reaction heat is released by the breaking of chemical bonds. If there is a decrease in thermal energy than a endothermic change is taking place, in this type of reaction thermal energy is absorbed into chemical bonds. A change of color or release of gases, as long as the gas is a new substance not just a change in state of matter, can indicate either a chemical or a physical change.</p>
+
+<h2 id="atoms">Atoms</h2>
+
+<p>People once thought that the atom was the smallest particle of matter in the universe However, scientists now know that atoms are made up of even smaller parts. There are three different kinds of particles. They are: protons, neutrons, and electrons.
+Most of the mass of an atom is found in the central part of the atom, called the nucleus. The nucleus of an atom is made up of protons and neutrons. These particles are packed very tightly together in the nucleus.</p>
+
+<p>Electrons are found outside the nucleus. They circle the nucleus very, very quickly. Electrons are very small and have almost no mass. The number of electrons in an atom is always equal to the number of protons in the nucleus of that atom.
+Scientists have discovered that protons, electrons, and neutrons have different charges. You probably know that the word “charge” has something to do with electricity.
+There are two kinds of charges. There are positive (plus) charges and negative (minus) charges. By studying atoms, scientist, have learned that:</p>
+
+<ul>
+  <li>PROTONS have positive (+) charges.</li>
+  <li>ELECTRONS have negative (-) charges.</li>
+  <li>NEUTRONS have no charges. They are neutral.</li>
+</ul>
+
+<p>Since atoms have the same number of protons and electrons, the number of positive charges equals the number of negative charges. The opposite charges cancel each other out. Therefore, the whole atom has no overall charge.</p>
+
+<p>The arrangement of electrons
+In the past, scientists believed that electrons circled the nucleus the same way the planets circled the sun. Today, however, scientists know that there is no exact path of an electron. The quick moving electrons form a “loud” around the nucleus.</p>
+
+<p>In the modern atomic theory, electrons are arranged into energy levels, or shells. Each electron shell is labelled with a capital letter. The first shell is the “K” shell. It is the shell closest the the nucleus. The “K” shell has the least amount of energy. The next shell is the “U’ shell. After the “L” shell, comes the “M” shell, and so on.</p>
+
+<p>Each shell can only hold a certain number of electrons.</p>
+
+<ul>
+  <li>The “K” shell can hold up to 2 electrons.</li>
+  <li>The “L” shell can hold up to 8 electrons.</li>
+  <li>The “M” shell can hold up to 18 electrons.</li>
+</ul>
+
+<p>The number of shells an atom has depends upon the number of electrons the atom has. In general, each shell must have its full number of electrons before a new shell starts. If there are mom electrons than a shell can hold, a new shell starts.</p>
+
+<p>The difference between atomic mass and atomic number
+Atoms of different kinds of matter have different numbers of protons and electrons. When scientists talk about different kinds of matter, they often refer to the matter by it’s atomic number. The atomic number of an atom is the number of protons (and usually, the number of electrons) in the atom.
+Scientists also describe atoms by their atomic mass. Scientists do not measure the mass of atoms in grams or ounces. They measure the mass of atoms in atomic mass units (a.m.u.). You can figure out the atomic mass of an atom by using the following information:</p>
+
+<ul>
+  <li>Each proton has a mass of 7 a.m.u.</li>
+  <li>Each neutron has a mass of I a.m.u.</li>
+  <li>The atomic mass of an atom is the total number of protons and neutrons in the nucleus of the atom.</li>
+</ul>
+
+<p>What about the electrons Don’t they count? Electrons are very light. Their mass is not counted in the atomic mass.
+Sometimes two moms of the same kind of matter do not have the same atomic mass. How is this possible? They have a different number of neutrons. All atoms of the same kind of matter always have the same number of protons. Thus, they all have the same atomic number. Atoms of the same kind of matter that have different numbers of neutrons are called isotopes.</p>
+
+<p>Properties of matter are characteristics that describe matter and can be used to identify different types. A general property, such as mass, weight, size,  or shape can change for a given type of matter. A characteristic properties are always the same for a specific kind of matter and stay the same despite the size or shape of the sample. Some examples of characteristic properties include hardness, flammability, boiling point, freezing point, melting point and density.</p>
+
+<h2 id="physical-changes">Physical changes</h2>
+
+<p>Physical changes occur when a change happens to matter which does not alter the type of matter that it is . A physical change will alter the form of a substance but not its identity. The physical properties of an object or substance change but it does not change into a new substance. A change of color or release of gases can indicate either a physical or a chemical change has occurred.</p>
+
+<h2 id="gasses">Gasses</h2>
+
+<p>Gases have particles that are spaced far apart and will expand away from one another to fill their container. These particles travel very quickly and bounce of the solid surfaces they come in contact with. Gases do not have a definite volume because they are so easily compressed and decompressed. When a gas is heated and charged with electrons it will change into a plasma, when it is cooled it will change into a liquid.</p>
+
+<h2 id="liquids">Liquids</h2>
+
+<p>Liquids are less dense than solids. They have a definite volume but unlike solids they take the shape of their container. The particles of liquids have some space between them and roll over one another in a fluid or flowing motion. They also have an acute magnetism which causes the particles of a liquid to group together or puddle on a surface. When a liquid is heated it will change into a gas, when it is cooled it will change into a solid.</p>
+
+<h2 id="solids">Solids</h2>
+
+<p>Solids are the most dense forms of mater. There particles are closely spaced and can only vibrate. Solids have a definite volume and shape. Unlike liquids liquids, gases and plasmas, solids have a fixed shape and do not change to take up the space of their container. When a solid is heated it will change into a liquid.</p>
+
+<h2 id="plasma">Plasma</h2>
+
+<p>Plasma is an ionized gas. When a plasma’s source of heat or electricity is taken away it will change into a gas.</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/physics/motion/">
+                    <h1>Motion</h1>
+                </a>
+                <hr/>
+
+                <p>An object is in motion when its distance from another object is changing. A reference point is a fixed place that you compare an object that is in motion to. A object is in motion if it changes position relative to a reference point. Speed is the distance an object travels in one unit of time. If an object moves at a constant speed it can be determined by dividing the distance it travels by the time taken to get to a specified point. When both the speed of an object an object and the direction the object is traveling in are stated than velocity is being described.</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/programming/adts/">
+                    <h1>Abstract Data Types</h1>
+                </a>
+                <hr/>
+
+                <h2 id="link-list">Link List</h2>
+
+<p>[HEAD]–&gt; [ ][ ]–&gt; [ ][/]</p>
+
+<h2 id="circular-linked-list">Circular Linked list</h2>
+
+<p>[HEAD]–&gt; [ ][ ]–&gt; [ ][ ]–&gt; [Back to HEAD]</p>
+
+<h2 id="doubally-linked-list">Doubally Linked List</h2>
+
+<p>[HEAD]&lt;–&gt;[ ][ ]&lt;–&gt;[ ][/]</p>
+
+<h2 id="circular-doubally-linked-list">Circular Doubally Linked List</h2>
+
+<p>[HEAD]&lt;–&gt;[ ][ ]&lt;–&gt;[ ][ ]&lt;–&gt;[Back to HEAD]</p>
+
+<h2 id="dummy-head">Dummy head</h2>
+
+<ul>
+  <li>Head points to the dummy head</li>
+  <li>Has no data</li>
+  <li>Dummy head is never removed</li>
+</ul>
+
+<h2 id="tail-node">Tail node</h2>
+
+<ul>
+  <li>Points to last node in the list</li>
+</ul>
+
+<h1 id="induction-proofs">Induction proofs</h1>
+
+<ul>
+  <li>f(0) = 0</li>
+  <li>f(n) = f(n-1) + 3n</li>
+  <li>Closed form: f(n) = 3n(n+1)/2</li>
+</ul>
+
+<p>BASIS
+f(0) = 0 in recurrence relationship
+Substitute 0 for n in closed form: f(0) = 3 * 0 * (0+1) / 2 = 0</p>
+
+<p>INDUCTIVE ASSUMPTION
+Assume k is an integer, k &gt; 0.
+f(k) = 3k(k+1)/2</p>
+
+<p>We want to show that f(k + 1) = 3 * (k+1) * (k+2) / 2</p>
+
+<p><strong>Proof</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Plug k+1 in for n in the recursive relation
+f(k+1) = f(k+1 - 1) + 3(k+1)
+       = f(k) + 3(k+1)
+       = 3k(k+1)/2 + 3(k+1)
+       = 3k(k+1)/2 = 6(k+1)/2
+       = (3k(k+1) + 6(k+1))/2
+       = ((k+1)(3k+6))/2
+       = 3(k+1)(K+2)/2      QED
+</code></pre></div></div>
+
+<h1 id="axioms">Axioms</h1>
+
+<ul>
+  <li>Things we can write that are true about out ADT</li>
+  <li>EX: After creating a list, the list should be empty</li>
+  <li>EX: After creatig a list, then adding an item, then removing an item, the list should be empty.</li>
+</ul>
+
+<h1 id="test-review-notes">Test Review Notes</h1>
+<p>Note: Review using recursion to traverse a list
+Anything that takes a node as a parameter has to be private. &lt;– Is this statement correct?
+The client can never know about nodes.
+Nodes are package-privte.</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/programming/java-notes/">
+                    <h1>Java Notes</h1>
+                </a>
+                <hr/>
+
+                <p>** Generic sort are only sort arrays of objects. It cannot sort an array of int’s which don’t have a compareto method.</p>
+
+<p>A heap can be stored in an array, and it does not require pointers or objects to represent the tree structure. Therefore heapsort is based on <strong>selection</strong>.</p>
+
+
+            </div>
+        </div>
+
+    
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <a href="/notes/trigonometry/trigonometry/">
+                    <h1>Finding Linear Velocity</h1>
+                </a>
+                <hr/>
+
+                <p>Examples:</p>
+
+<p>Find the linear velocity of a point on the edge of a lawn mower blade 18 inches long evolving at 300 rpm. Find in inches per minute.</p>
+
+<p>v = 300 rev / 1 min * 2Pi / 1 rev * 18 in / 1 * 1 min / 60 sec = 10800 / 60 = 180Pi inches per second</p>
+
+<p>A point is 25 inches from the center of a circle. If the circle is rotating at 15 rev per sec, find the velocity of the point in feet per minute.</p>
+
+<p>v = wr = 1800 Pi rad / 1 min * 24 in / 1 * 1 ft / 12 in = 3600 Pi ft / min</p>
+
+<p>A point on the rim of a tir is 14 inches from the hub of the wheel. If the wheel is rotating at 120 rpm, find the linear velocity of the point in inches per second.</p>
+
+<p>v = 120 rev / 1 min * 2 Pi / 1 rev * 1 min / 60 sec * 14 in  / 1= 56 Pi in /sec</p>
+
+<p>A point on the edge of a gear 8 inches in diameter is revolving at 180 rpm. Find the linear velocity of this point in inches per second</p>
+
+<p>v = 130 rev / min * 3 pi / 1 rev * 1 min / 60 sec * 4 in / 1 = 24 Pi in / sec</p>
+
+<p>A person on the end of a skating whip is 10 feet from the center person. If they want to make 20 revolutions per minute, how fast will the last person in the line have to skate?</p>
+
+<p>v = 20 ev / sec * 2 Pi / 1 rev * 10 ft / 1 = 400 ft/ min</p>
+
+<p>Find the angular velocity in radians per minute and the linear velocity in feet per minute of the point on the rim of a wheel with 32 inch diameter rotating at 5 rev/sec.</p>
+
+<p>w = 5 rev / 1 sec * 2 Pi / 1 rev * 60 sec / 1 min = 100 Pi rad/min</p>
+
+<p>v = 600Pi / 1 min * 16 in * 1 ft/ 12 in = 800 Pi ft / min</p>
+
+<p>Note: In the above equation, Pi is the symbol pi and the operations of division indicate fractions.</p>
+
+
+            </div>
+        </div>
+
+    
+</div>
+
+
+        
+        <footer>
+	<div class="container-fluid color-rust">
+		<div class="row" style="padding: 15px 0px">
+	        <div class="col-xs-6">
+                <i>Copyright &copy; 2021 Gunther Cox</i>
+            </div>
+	        <div class="col-xs-6 text-right">
+                
+                    <a href="https://twitter.com/salviusrobot" aria-label="Twitter" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.facebook.com/salviusrobot" aria-label="Facebook" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.youtube.com/user/salviusrobot/videos" aria-label="YouTube" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12573345-9', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+    </body>
+</html>

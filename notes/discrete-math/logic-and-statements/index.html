@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+        <meta name="google-site-verification" content="ONW7FjhOnQbl0qdKKOUYXBxf-4ERt8FfB30p6dl0WUQ" />
+    
+        <meta content="http://salvius.org/images/main/succeed.jpg" property="og:image"/>
+    
+        <meta content="http://salvius.org/images/main/first_snow.jpg" property="og:image"/>
+    
+        <meta content="http://blog.salvius.org/2015/01/salvius-gives-thumbs-up-to-students-at.html" property="og:see_also"/>
+    
+        <meta content="http://blog.salvius.org/2014/11/grinspoon-entrepreneurship-conference.html" property="og:see_also"/>
+    
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <meta name="twitter:site" content="@salviusrobot">
+    
+        <meta name="twitter:creator" content="@salviusrobot">
+    
+        <meta name="twitter:title" content="A humanoid robot build using salvaged materials">
+    
+        <meta name="twitter:image:src" content="http://salvius.org/images/main/succeed.jpg">
+    
+        <meta property="og:type" content="product"/>
+    
+        <meta property="og:price:amount" content="{{ page.price }}"/>
+    
+        <meta property="og:price:currency" content="USD"/>
+    
+        <meta property="og:availability" content="preorder"/>
+    
+        <meta property="og:provider_name" content="Robot Store"/>
+    
+        <meta property="og:brand" content="Salvius"/>
+    
+        <meta name="msapplication-TileColor" content="#f15501"/>
+    
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+    
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+    
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+    
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+    
+
+    <meta content="Salvius the Robot" property="og:site_name"/>
+    <meta content="http://salvius.org" property="og:referenced"/>
+
+    <meta content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+    <meta name="twitter:description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials.">
+    <meta name="description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+
+    
+        <meta content="Logic and Statements" property="og:title"/>
+        <title>Logic and Statements</title>
+    
+
+    
+    <link rel="publisher" href="https://plus.google.com/+gunthercox"/>
+    
+
+	<link rel="stylesheet" href="/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+    
+
+    <link rel="canonical" href="http://salvius.org/notes/discrete-math/logic-and-statements/"/>
+    <link rel="shortlink" href="http://salvius.org/notes/discrete-math/logic-and-statements/"/>
+</head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="nav"  role="navigation">
+   <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Salvius the Robot</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="http://blog.salvius.org">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+        </a>
+    </li>
+    <li>
+        <a href="/blog/">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+            <sup style="color: #fbff6f">NEW</sup>
+        </a>
+    </li>
+    <li>
+        <a href="/donate/">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            Donate
+        </a>
+    </li>
+    <li>
+        <a href="/presentations/">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            Presentations
+        </a>
+    </li>
+    <li>
+        <a href="/tools/">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            Tools
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/gunthercox/Salvius" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            GitHub
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </div> 
+</div>
+
+<div class="margin-top">
+    <!-- Space under the fixed navbar -->
+</div>
+
+
+        <div class="container-fluid color-prestige">
+            <div class="row" style="padding: 20px 0px">
+                <div class="col-xs-4">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/discrete-math/infinity/">Previous</a>
+                    
+                </div>
+                <div class="col-xs-4 text-center">
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/">Main</a>
+                </div>
+                <div class="col-xs-4 text-right">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/discrete-math/math-review/">Next</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container color-white post">
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h1>Logic and Statements</h1>
+                    <hr/>
+
+                    <p>Statement - A mathematical phrase that is true or false</p>
+
+<p>Examples:</p>
+<ul>
+  <li>P: Today is Monday. –&gt; false</li>
+  <li>Q: The integer 5 is even. –&gt; false</li>
+  <li>R: The integer 0 is even. –&gt; true</li>
+</ul>
+
+<hr />
+<p><strong>Unrelated:</strong> This shows how it is possible to proove that 0 is even.
+n is even if and only if n = 2k for some integer k.
+0 = 2 * 0
+***</p>
+
+<p>The following examples of P, Q and R display their meaning in plain terms.</p>
+<ul>
+  <li>P v Q is true –&gt; “At least one of these is true.”</li>
+  <li>Q ^ R is true –&gt; “Both of these are true.”</li>
+  <li>P ⊕ R is true –&gt; “One of these is true but not both.”</li>
+</ul>
+
+<h1 id="laws">Laws</h1>
+
+<blockquote>
+  <p>Demorgan’s law:<br />
+~(PvQ) ≡ ~P ^ ~Q<br />
+~(P^Q) ≡ ~P v ~Q</p>
+</blockquote>
+
+<p>Examples:</p>
+
+<blockquote>
+  <p>~(1 ≤ n &lt; 3)<br />
+&lt;=========○—–●=========&gt;<br />
+          1      3<br />
+Also: n &lt; 1 OR n ≥ 3</p>
+</blockquote>
+
+<blockquote>
+  <p>1 ≤ n &lt; 3<br />
+&lt;———●=====○———&gt;<br />
+          1      3</p>
+</blockquote>
+
+<blockquote>
+  <p>1.) Negate the following statements.<br />
+The earth has two moons or 3 + 5 &lt; 2<br />
+The earth does not have two moons and 3 + 5 ≥ 2</p>
+</blockquote>
+
+<blockquote>
+  <p>2.) Negate the following statements.<br />
+A stack overflow has occured and the sector size is not supported.<br />
+A stack overflow has not occured and the sector size is supported.</p>
+</blockquote>
+
+<blockquote>
+  <p>3.) Negate the following statements.<br />
+x is positive or y is negative.<br />
+x is not positive or y is not negative.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="conditional-statements-implications">Conditional Statements (Implications)</h1>
+
+<blockquote>
+  <p>P –&gt; The hypothesis<br />
+Q –&gt; The conclusion</p>
+</blockquote>
+
+<blockquote>
+  <p>If P then Q</p>
+</blockquote>
+
+<blockquote>
+  <p>If n is even, then n<sup>2</sup> is even<br />
+Hypothesis: n is even<br />
+Conclusion: n<sup>2</sup> is even</p>
+</blockquote>
+
+<p>There is many ways in which implications can be worded. Some examples are:</p>
+<blockquote>
+  <p>P =&gt; Q<br />
+If P, then Q<br />
+P implies Q<br />
+P only if Q<br />
+Q if P<br />
+P is sufficient for Q<br />
+Q is necessary for P</p>
+</blockquote>
+
+<h2 id="negating-an-if-then-statement-negating-an-implication">Negating an if then statement (negating an implication)</h2>
+
+<blockquote>
+  <p>~(P =&gt; Q) ≡ ~(~P v Q)<br />
+~(~P v Q) ≡ p ^ ~Q</p>
+</blockquote>
+
+<p>Examples:</p>
+
+<blockquote>
+  <p>Negate the following.<br />
+If x &gt; y, then x<sup>2</sup> &gt; y<sup>2</sup><br />
+x &gt; y and x<sup>2</sup> ≤ y<sup>2</sup><br />
+<strong>Note:</strong> Do not write the <em>If</em> in the negation.</p>
+</blockquote>
+
+<blockquote>
+  <p>Negate the following.<br />
+If rs = 0, then r = 0 or s = 0<br />
+rs = 0 and r != 0 and s != 0<br />
+<strong>Notice:</strong> The negation results in the form <em>P ^ ~Q</em>.</p>
+</blockquote>
+
+<h2 id="contrapositive-and-converse-statements">Contrapositive and converse statements</h2>
+
+<blockquote>
+  <p>If P, then Q.<br />
+Contrapositive: If ~Q, then ~P.<br />
+Converse: If Q, then P.</p>
+</blockquote>
+
+<blockquote>
+  <p>If T is equalateral, then T is isosceles.<br />
+<strong>Note:</strong> isosceles defines a triangle in which two sides are congruent.<br />
+Contrapositive: If T is not isoscelesm then T is not equalateral.<br />
+Converse: If T is isosceles, then T is equalateral.<br />
+<strong>Note:</strong> The contrapositive of this statement is true while the converse of this statement is false.<br />
+The contrapositive will always be logically equivilant to the origional statement.</p>
+</blockquote>
+
+<h2 id="biconditional-statements">Biconditional statements</h2>
+
+<blockquote>
+  <p>P &lt;=&gt; Q<br />
+“P if and only if Q”<br />
+“If p, then Q and if Q then P”</p>
+</blockquote>
+
+<p>Examples:</p>
+
+<blockquote>
+  <p>If ab is even, then a is even and b is even.<br />
+False, 2 * 3 = 6, 6 is even but 2 is even and 3 is not even.</p>
+</blockquote>
+
+<blockquote>
+  <p>If ab is even then, a is even or b is even.<br />
+True<br />
+Converse: If a is even or b is even, then ab is even.<br />
+True<br />
+Biconditional: ab is even <em>if and only if</em> a is even or b is even.<br />
+<strong>Note:</strong> The statement and the converse are not always both true, but when they are it means the biconditional is true.</p>
+</blockquote>
+
+<h2 id="set-notation">Set notation</h2>
+
+<ul>
+  <li>ℕ is the set of natural numbers.</li>
+  <li>Mathemeticians and computer scientists define the set of natural numbers diferently.</li>
+  <li>Mathemeticians: ℕ = {1, 2, 3, …}</li>
+  <li>
+    <p>Computer scientists: ℕ = {0, 1, 2, …}</p>
+  </li>
+  <li>ℤ is the set of integers.</li>
+  <li>
+    <p>ℤ = {…, -3, -2, -1, 0, 1, 2, 3, …}</p>
+  </li>
+  <li>ℝ is the set of real numbers.</li>
+  <li>
+    <p>ℝ = {1, 12.38, -0.8625, 3/4, √2, 198}</p>
+  </li>
+  <li>ℚ is the set of rational numbers.</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>ℚ = { a/b</td>
+          <td>a, b ∈ ℤ, b != 0}</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>3/7 ∈ ℚ</li>
+  <li>-4000/201 ∈ ℚ</li>
+  <li>4 = 4/1 ∈ ℚ</li>
+  <li>π ∉ ℚ</li>
+</ul>
+
+<p><strong>Note:</strong> The symbol ‘∈’ is pronounced <em>is a subset of</em>.</p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+	<div class="container-fluid color-rust">
+		<div class="row" style="padding: 15px 0px">
+	        <div class="col-xs-6">
+                <i>Copyright &copy; 2021 Gunther Cox</i>
+            </div>
+	        <div class="col-xs-6 text-right">
+                
+                    <a href="https://twitter.com/salviusrobot" aria-label="Twitter" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.facebook.com/salviusrobot" aria-label="Facebook" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.youtube.com/user/salviusrobot/videos" aria-label="YouTube" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12573345-9', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3019790405701706",
+            enable_page_level_ads: true
+          });
+        </script>
+    </body>
+</html>

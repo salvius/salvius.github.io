@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
+        <meta name="google-site-verification" content="ONW7FjhOnQbl0qdKKOUYXBxf-4ERt8FfB30p6dl0WUQ" />
+    
+        <meta content="http://salvius.org/images/main/succeed.jpg" property="og:image"/>
+    
+        <meta content="http://salvius.org/images/main/first_snow.jpg" property="og:image"/>
+    
+        <meta content="http://blog.salvius.org/2015/01/salvius-gives-thumbs-up-to-students-at.html" property="og:see_also"/>
+    
+        <meta content="http://blog.salvius.org/2014/11/grinspoon-entrepreneurship-conference.html" property="og:see_also"/>
+    
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <meta name="twitter:site" content="@salviusrobot">
+    
+        <meta name="twitter:creator" content="@salviusrobot">
+    
+        <meta name="twitter:title" content="A humanoid robot build using salvaged materials">
+    
+        <meta name="twitter:image:src" content="http://salvius.org/images/main/succeed.jpg">
+    
+        <meta property="og:type" content="product"/>
+    
+        <meta property="og:price:amount" content="{{ page.price }}"/>
+    
+        <meta property="og:price:currency" content="USD"/>
+    
+        <meta property="og:availability" content="preorder"/>
+    
+        <meta property="og:provider_name" content="Robot Store"/>
+    
+        <meta property="og:brand" content="Salvius"/>
+    
+        <meta name="msapplication-TileColor" content="#f15501"/>
+    
+        <meta name="msapplication-square70x70logo" content="tiny.png"/>
+    
+        <meta name="msapplication-square150x150logo" content="square.png"/>
+    
+        <meta name="msapplication-wide310x150logo" content="wide.png"/>
+    
+        <meta name="msapplication-square310x310logo" content="large.png"/>
+    
+
+    <meta content="Salvius the Robot" property="og:site_name"/>
+    <meta content="http://salvius.org" property="og:referenced"/>
+
+    <meta content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+    <meta name="twitter:description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials.">
+    <meta name="description" content="Salvius is an open-source humanoid robot built on a minimal budget using recycled materials."/>
+
+    
+        <meta content="Induction" property="og:title"/>
+        <title>Induction</title>
+    
+
+    
+    <link rel="publisher" href="https://plus.google.com/+gunthercox"/>
+    
+
+	<link rel="stylesheet" href="/assets/css/main.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+    
+
+    <link rel="canonical" href="http://salvius.org/notes/discrete-math/11-11-2014/"/>
+    <link rel="shortlink" href="http://salvius.org/notes/discrete-math/11-11-2014/"/>
+</head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="nav"  role="navigation">
+   <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Salvius the Robot</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+    <li>
+        <a href="http://blog.salvius.org">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+        </a>
+    </li>
+    <li>
+        <a href="/blog/">
+            <i class="fa fa-rss" aria-hidden="true" style="color: #FF7800;"></i>
+            Blog
+            <sup style="color: #fbff6f">NEW</sup>
+        </a>
+    </li>
+    <li>
+        <a href="/donate/">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            Donate
+        </a>
+    </li>
+    <li>
+        <a href="/presentations/">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            Presentations
+        </a>
+    </li>
+    <li>
+        <a href="/tools/">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            Tools
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/gunthercox/Salvius" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            GitHub
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </div> 
+</div>
+
+<div class="margin-top">
+    <!-- Space under the fixed navbar -->
+</div>
+
+
+        <div class="container-fluid color-prestige">
+            <div class="row" style="padding: 20px 0px">
+                <div class="col-xs-4">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/discrete-math/11-04-2014/">Previous</a>
+                    
+                </div>
+                <div class="col-xs-4 text-center">
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/">Main</a>
+                </div>
+                <div class="col-xs-4 text-right">
+                    
+                    <a class="btn btn-default white-outline color-prestige" href="/notes/discrete-math/divisibility/">Next</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container color-white post">
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h1>Induction</h1>
+                    <hr/>
+
+                    <h1 id="sequences">Sequences</h1>
+
+<blockquote>
+  <p>2, 4, 6, 8, 10, …<br />
+1, 2, 4, 8, 16, …<br />
+1/2, 2/3, 3/4, 4/5, …</p>
+</blockquote>
+
+<p>A sequence is an ordered list of terms.</p>
+
+<blockquote>
+  <p>2,   4,   6,   8,   …<br />
+1st, 2nd, 3rd, 4th, …<br />
+1<em>2, 2</em>2, 3<em>2, 4</em>2, …</p>
+</blockquote>
+
+<p>A general (or explicit) formula for the nth term.</p>
+
+<p>a<sub>n</sub> = 2n</p>
+
+<h2 id="notation">Notation</h2>
+
+<blockquote>
+  <p>I want to write the shorthand version of: 1/2 + 2/3 + 3/4 + 4/5 + …
+see note sheet #9q34</p>
+</blockquote>
+
+<h1 id="principle-of-mathematical-induction">Principle of Mathematical Induction</h1>
+
+<p>To proove statements of the form:
+    “For all integers n &gt;= 1, P(n).”</p>
+
+<blockquote>
+  <p>If   1)  P(1) is true<br />
+and  2)  the statement<br />
+            “for all integers k &gt;= 1, P(k) =&gt; P(k+1)”<br />
+          is true</p>
+</blockquote>
+
+<p>The metaphore for this is a ladder. If I can get the next rung,
+then I can get the the rung after that one.</p>
+
+<p>To use the principle of Mathematical Induction</p>
+<ol>
+  <li>Proove the statement is true for n=1 (base step or base case).</li>
+  <li>Let k &gt;= 1 be some arbitrary integer.</li>
+  <li>Assume P(k). This is called the inductive hypothesis.</li>
+  <li>Proove P(k+1). This is called the inductive step.</li>
+  <li>Therefor, P(n) for all n &gt;= 1.</li>
+</ol>
+
+<p>Continued on paper notes: #zrepryt</p>
+
+<h1 id="statement-of-mathematical-induction">Statement of Mathematical Induction</h1>
+
+<p>Let a be some fixed non-negative integer.
+Let P(n) be a statement define d for all integers n &gt;= a.
+If P(a) is true …</p>
+
+<p>Conjecture: Using 3 cent coins and 5 cent coins, any change amount n &gt;= 8 can be made.</p>
+
+<p>8 = 3 + 5
+9 = 3 + 3 + 3
+10 = 5 + 5
+11 = 3 + 3 + 5
+12 = 3 + 3 + 3</p>
+
+<p>Case 1 = no 5 cent coins
+Case 2 = at least oe 5 cent coin</p>
+
+<p>Result: For all change amounts n &gt;= 8, you can make n cents using only 3 cent coins and 5 cent coins.</p>
+
+<p><strong>Proof by induction</strong>:
+Observe that 8 = 3 + 5, prooving the base case.
+Let k &gt;= 8 be any arbitrary integer.
+Assume that k cents can be made by using only 3 cent and 5 cent coins.
+We claim that (k + 1) cents can be made using only 3 cent coins and at least one 5 cent coin.
+Case 1: at lest one 5 cent coin is used to make k cents.
+    Trade one 5 cent coin for each 3 cent coins.
+    The total would then be k - 5 + 2 * 3 = k + 1 cents.
+Case 2:
+    no 5 cent coins are used in making k cent coins.
+    Since k &gt;= 8 and only 3 cent coins are used, we have <em>at least three</em> 3 cent coins.
+    Trade three 3 cent coins or two 5 cent coins.
+    The total would then be k - 3 * 3 + 2 * 5 = k + 1.
+    Therefore, by the Principle of Mathematical Induction, any amount n &gt;= 8 can be made.</p>
+
+<hr />
+
+<p><strong>Proof by Mathematical Induction using Factorials</strong>
+1 * 1! + 2 * 2! + 3 * 3! .. + n * n! = (n + 1)! = 1 for all n &gt;= 1.
+Proof: Observe that when n = 1, 1 * 1! = 1 == 2! - 1 = (1 + 1)! - 1 prooving the base case.
+Let k &gt;= 1 be any arbitrary integer.
+Assume 1 * 1! + 2 * 2! + 3 * 3! .. + k * k! = (k + 1)! - 1.
+We want to show that 1 * 1! + 2 * 2! + 3 * 3! .. + k * k! = (k + 1) * (k + 1)! = (k + 2)! - 1
+1 * 1! + 2 * 2! + 3 * 3! .. + k * k! = (k + 1) * (k + 1)! = (k + 1)! - 1 + (k + 1) * (k + 1)!
+                                                          = (k + 1)! * (1 + k + 1) - 1
+                                                          = (k + 1)! * (k + 2) - 1
+                                                          = (k + 2)! - 1
+By the P.M.I., E<sup>n</sup><sub>i=1</sub> i * i = (n + 1)! - 1 for all n &gt;= 1.
+<em>The statement above should be formatted in the inductive notation format which wont work in markdown.</em></p>
+
+<hr />
+
+<p>Prove that n &lt; 2<sup>n</sup> for all n &gt;= 1.
+Proof: Observe that 1 &lt; 2<sup>1</sup>, prooving the base case.
+Let k &gt;= 1 be any arbitrary integer.
+Assume k &lt; 2<sup>k&lt;/sub&gt;.
+We want to show that k + 1 &lt; 2<sup>k+1</sup>
+Observe that 2<sup>k+1</sup> = 2<sup>k</sup> * 2 &gt; k * 2 = 2k = k + k &gt;= k + 1
+By the P.M.I., n &lt; 2<sup>n</sup> for all n &gt;= 1.</sup></p>
+
+<hr />
+
+<p>Prove that n! is &gt; 2<sup>n</sup> for all n &gt;= 4.
+Proof: Notice that 4 ! = 24 &gt; 16 = 2<sup>4</sup>.
+Let k &gt;= 4 be any arbitrary integer.
+Assume k! &gt; 2<sup>k</sup>.
+We want to show (k + 1)! &gt; 2<sup>k+1</sup>
+Observe (k + 1)! = (k + 1) * k! &gt; (k + 1) * 2<sup>k</sup> &gt;= 5 * 2 &gt; 2 * 2<sup>k</sup> = 2<sup>k+1</sup>.
+By P.M.I. n! &gt; 2<sup>n</sup> for all n &gt;= 4.</p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+	<div class="container-fluid color-rust">
+		<div class="row" style="padding: 15px 0px">
+	        <div class="col-xs-6">
+                <i>Copyright &copy; 2021 Gunther Cox</i>
+            </div>
+	        <div class="col-xs-6 text-right">
+                
+                    <a href="https://twitter.com/salviusrobot" aria-label="Twitter" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.facebook.com/salviusrobot" aria-label="Facebook" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+                    <a href="https://www.youtube.com/user/salviusrobot/videos" aria-label="YouTube" target='_blank' class="btn btn-lg btn-link text-white">
+                        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 24px;"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12573345-9', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3019790405701706",
+            enable_page_level_ads: true
+          });
+        </script>
+    </body>
+</html>
